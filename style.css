@@ -275,6 +275,11 @@ button:hover {
   background-color: var(--pill_btn_hover);
 }
 
+nav ul a:active,
+button:active {
+  color: #1a5585;
+}
+
 footer {
   outline: var(--construct);
   display: flex;

@@ -66,10 +66,10 @@ img.hex_header:hover {
 
 a.connect {
   outline: var(--construct);
-  width: 9em;
+  width: 10em;
   position: absolute;
   font-family: 'Hind', sans-serif;
-  font-weight: 400;
+  font-weight: 700;
   font-size: 1.1em;
   color: var(--linktext);
   text-decoration: none;

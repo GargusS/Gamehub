@@ -173,9 +173,14 @@ main.contact form {
 
 details {
   font-size: 1.1rem;
-  background-color: #1a5585;
+  background-color: #0a1b2b;
   margin-bottom: 2rem;
   padding: 0.5em;
+}
+
+details:hover {
+  cursor: pointer;
+  background-color:#1a5585;
 }
 
 main.sell div.content {

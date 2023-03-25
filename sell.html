@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hind:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>GameHub homepage</title>
+  </head>
+  <body>
+    <header>
+      <img
+        class="logo_big"
+        src="./assets/img/logo_big.png"
+        alt="gamehub logo"
+      />
+      <div class="connect_btn">
+        <img
+          class="hex_header"
+          src="./assets/img/blue_hex_small.png"
+          alt="blue hexagon button"
+        />
+        <a class="connect" href="#">Connect To The Hub</a>
+      </div>
+      <nav>
+        <ul class="nav-list" role="list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="buy.html">Buy Games</a></li>
+          <li><a href="sell.html">Sell Games</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="cart.html">View Cart</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="sell">
+      <div class="content">
+        <aside>
+          <h2>GameHub Grading system</h2>
+          <br />
+          <section>
+            <h3>Mint (M)</h3>
+            <details>
+              <p>
+                No scuffs/scratches, unplayed - possibly still sealed.
+                Insert/Inlay/Booklet/Sleeve/Digipak: Perfect. No wear, marks, or
+                any other perfections - possibly still sealed.
+              </p>
+            </details>
+          </section>
+          <section>
+            <h3>Near Mint (NM or M-)</h3>
+            <details>
+              <p>
+                Near perfect. No obvious signs of use, it may have been played -
+                but it has been handled very carefully.
+                Insert/Inlay/Booklet/Sleeve/Digipak: Near Perfect. No obvious
+                wear, it may have only the slightest of marks from handling.
+              </p>
+            </details>
+          </section>
+          <section>
+            <h3>Very Good Plus (VG+)</h3>
+            <details>
+              <p>
+                A few minor scuffs/scratches. This has been played, but handled
+                with good care - and certainly not
+                abused.Insert/Inlay/Booklet/Sleeve/Digipak: Slight wear, marks,
+                indentations, it may possibly have a cut-out hole (or similar).
+              </p>
+            </details>
+          </section>
+          <section>
+            <h3>Very Good (VG)</h3>
+            <details>
+              <p>
+                Quite a few light scuffs/scratches, or several more-pronounced
+                scratches. This has obviously been played, but not handled as
+                carefully as a VG+. Insert/Inlay/Booklet/Sleeve/Digipak: More
+                wear, marks, indentations than a VG+. May have slight fading, a
+                small tear/rip, or some writing.
+              </p>
+            </details>
+          </section>
+          <section>
+            <h3>Good (G), Good Plus (G+)</h3>
+            <details>
+              <p>
+                There are a lot of scuffs/scratches. However it will still play
+                through without problems. This has not been handled with much
+                care at all. Insert/Inlay/Booklet/Sleeve/Digipak: Well worn,
+                marked, more obvious indentations, fading, writing, than a VG -
+                possibly a more significant tear/rip.
+              </p>
+            </details>
+          </section>
+          <section>
+            <h3>Poor (P), Fair (F)</h3>
+            <details>
+              <p>
+                The disc may or may not play some or all of the tracks. See the
+                seller's comments for
+                details.Insert/Inlay/Booklet/Sleeve/Digipak: Very worn. It may
+                have obvious writing on it, it may be ripped/torn, or
+                significantly faded, or water damaged.
+              </p>
+            </details>
+          </section>
+          <section>
+            <h3>Generic</h3>
+            <details>
+              <p>
+                Within the context of grading items in the GameHub Marketplace,
+                the term "generic" refers to a type of sleeve that is not
+                specific to the release. A generic sleeve is either a plain
+                sleeve or a company sleeve with standard company artwork. A
+                sleeve that is graded as "generic" needs no further grading, as
+                a generic sleeve generally adds little value to the item and can
+                be easily replaced. Sellers can further specify a generic
+                sleeve's condition in the “Item condition comment” field if
+                needed. A seller can also note if the sleeve is a company sleeve
+                in the “Item condition comment” field.
+              </p>
+            </details>
+          </section>
+        </aside>
+        <form>
+          <fieldset>
+            <legend>
+              <h2>
+                Fill in this form to register your used game in the listings
+              </h2>
+            </legend>
+            <label for="title">Game Title:</label>
+            <input type="text" name="title" />
+
+            <label for="condition"
+              >Game Condition: (please use our grading system)</label
+            >
+            <input type="text" name="condition" />
+
+            <label for="description">Game Description:</label>
+            <textarea name="description" cols="100" rows="10"></textarea>
+            <br />
+            <label for="email">Your Email:</label>
+            <input type="text" name="email" />
+            <br />
+            <br />
+            <button>Submit Listing</button>
+          </fieldset>
+        </form>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer_adress">
+        <p>
+          GameHub
+          <br />
+          Storgata 123
+          <br />
+          9400 Harstad
+          <br />
+          Norway
+        </p>
+      </div>
+      <div class="footer_email">
+        <p>
+          info(a)gamehub.no
+          <br />
+          support(a)gamehub.no
+        </p>
+      </div>
+      <div class="footer_phone">
+        <p>
+          Main Line:
+          <br />
+          +47 23 45 67 89
+          <br />
+          Customer Service:
+          <br />
+          +47 23 45 67 90
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

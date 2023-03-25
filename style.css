@@ -1,0 +1,294 @@
+:root {
+  /* --construct: 2px solid lime; */
+  --bg: #0a1b2b;
+  --pill_btn: #1a5585;
+  --pill_btn_hover: #45a9d340;
+  --linktext: #ffffff;
+  --linkhover: #ffffff90;
+  --text: #ffffff;
+  --h1: 1.5em;
+  --h3: 1.8em;
+}
+
+body {
+  display: grid;
+  grid-template-areas:
+    'header header  header'
+    'main   main    main'
+    'footer footer  footer';
+  max-width: 1920px;
+  /* max-height: 1080px; */
+  color: var(--text);
+  background-color: var(--bg);
+  margin: 0 auto;
+}
+
+header {
+  outline: var(--construct);
+  display: flex;
+  justify-content: space-between;
+  grid-area: header;
+  align-items: center;
+  margin-bottom: auto;
+  width: 100%;
+  padding: 50px;
+}
+
+header img.logo_big {
+  outline: var(--construct);
+  width: 250px;
+}
+
+div.connect_btn {
+  outline: var(--construct);
+  display: flex;
+  align-items: center;
+  position: relative;
+  /* left: 450px; */
+  width: 110px;
+  height: 110px;
+}
+
+img.hex_header {
+  outline: var(--construct);
+  position: absolute;
+  left: -50px;
+  /* width: auto;
+  height: auto; */
+}
+
+img.hex_header:hover {
+  outline: var(--construct);
+  position: absolute;
+  left: -50px;
+  rotate: 90deg;
+}
+
+a.connect {
+  outline: var(--construct);
+  width: 9em;
+  position: absolute;
+  font-family: 'Hind', sans-serif;
+  font-weight: 400;
+  font-size: 1.1em;
+  color: var(--linktext);
+  text-decoration: none;
+}
+
+a.connect:hover {
+  color: var(--linkhover);
+}
+
+nav ul {
+  display: flex;
+}
+
+main {
+  outline: var(--construct);
+  grid-area: main;
+  height: 1fr;
+}
+
+h1 {
+  font-family: 'Hind', sans-serif;
+  font-size: 3em;
+  font-weight: 700;
+  outline: var(--construct);
+  line-height: var(--h1);
+}
+
+h2,
+label {
+  font-family: 'Hind', sans-serif;
+  font-size: 1.3em;
+  font-weight: 700;
+  outline: var(--construct);
+}
+
+h3 {
+  font-family: 'Hind', sans-serif;
+  font-weight: 700;
+  outline: var(--construct);
+  line-height: var(--h3);
+}
+
+p {
+  font-family: 'Heebo', sans-serif;
+  font-weight: 400;
+  outline: var(--construct);
+  line-height: var(--h3);
+}
+
+.page-headline {
+  margin-left: 500px;
+}
+
+main.index {
+  padding: 20px;
+}
+
+main.buy {
+  max-width: 1300px;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+main.sell {
+  width: 1600px;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+main.about {
+  width: 40em;
+  padding: 20px;
+  margin: 0 auto;
+  font-size: 1.2rem;
+}
+
+main.contact {
+  width: 40em;
+  padding: 20px;
+  margin: 0 auto;
+  font-size: 1.2rem;
+  text-align: left;
+}
+
+aside {
+  grid-area: aside;
+}
+
+.astralis {
+  outline: var(--construct);
+}
+
+section {
+  outline: var(--construct);
+}
+
+section h3 {
+  color: var(--text);
+}
+
+main.contact form {
+  /* justify-content: center; */
+  margin-bottom: 5em;
+}
+
+details {
+  font-size: 1.1rem;
+  background-color: #1a5585;
+  margin-bottom: 2rem;
+}
+
+main.sell div.content {
+  outline: var(--construct);
+  display: flex;
+  justify-content: space-evenly;
+}
+
+main.sell div.content aside {
+  outline: var(--construct);
+  width: 30rem;
+}
+
+div.slider-container {
+  outline: var(--construct);
+  position: relative;
+  top: -100px;
+  left: 100px;
+  width: 500px;
+  height: 260px;
+  margin: 0 auto;
+}
+
+div.slider-container .slider {
+  zoom: 0%;
+}
+
+.imagehex {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  top: -580px;
+  left: 400px;
+}
+
+ul.nav-list {
+  outline: var(--construct);
+}
+
+nav ul.nav-list a,
+button {
+  color: var(--linktext);
+  font-family: 'Hind', sans-serif;
+  font-weight: 700;
+  font-size: 1.2em;
+  text-decoration: none;
+  background-color: var(--pill_btn);
+  /* height: 30px; */
+  border-radius: 20px;
+  /* margin: 0 auto; */
+  padding: 2px 20px 2px 20px;
+}
+
+fieldset {
+  /* margin: 0 auto; */
+  padding: 2em;
+  border-radius: 10px;
+  border-color: #1a5585;
+  border-width: 5px;
+  /* width: auto; */
+}
+
+main.contact fieldset {
+  /* margin: 0 auto; */
+  padding: 2em;
+  border-radius: 10px;
+  border-color: #1a5585;
+  border-width: 5px;
+  /* width: auto; */
+}
+
+label {
+  display: block;
+  margin-bottom: 1em;
+}
+
+input {
+  margin-bottom: 3em;
+  width: 45em;
+}
+
+main.contact input {
+  margin-bottom: 3em;
+  width: 20em;
+}
+
+ul.nav-list li {
+  padding: 10px;
+}
+
+nav ul a:hover,
+button:hover {
+  background-color: var(--pill_btn_hover);
+}
+
+footer {
+  outline: var(--construct);
+  display: flex;
+  justify-content: space-evenly;
+  grid-area: footer;
+  width: 100%;
+  height: 170px;
+  padding-top: 20px;
+}
+
+footer div {
+  outline: var(--construct);
+  margin-top: auto;
+  font-family: 'Heebo';
+  font-weight: 400;
+  font-size: 1em;
+  width: 200px;
+}

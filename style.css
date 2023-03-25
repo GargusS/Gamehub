@@ -154,10 +154,6 @@ main.contact {
   text-align: left;
 }
 
-aside {
-  grid-area: aside;
-}
-
 .astralis {
   outline: var(--construct);
 }
@@ -190,6 +186,8 @@ main.sell div.content {
 
 main.sell div.content aside {
   outline: var(--construct);
+  font-family: 'Heebo', sans-serif;
+  font-weight: 400;
   width: 30rem;
 }
 

@@ -113,6 +113,10 @@ h3 {
   line-height: var(--h3);
 }
 
+h3.grading {
+  font-size: 1.3em;
+}
+
 p {
   font-family: 'Heebo', sans-serif;
   font-weight: 400;

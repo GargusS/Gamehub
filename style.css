@@ -268,9 +268,20 @@ legend {
   /* padding: 0 1em; */
 }
 
+legend.contact {
+  text-align: left;
+  padding: 0 1em;
+}
+
 label {
   display: block;
   text-align: center;
+  margin-top: 1em;
+}
+
+label.contact {
+  display: block;
+  text-align: left;
   margin-top: 1em;
 }
 

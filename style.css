@@ -91,7 +91,7 @@ main {
 
 h1 {
   font-family: 'Hind', sans-serif;
-  font-size: 3em;
+  font-size: 2em;
   font-weight: 700;
   outline: var(--construct);
   line-height: var(--h1);
@@ -107,6 +107,7 @@ label {
 
 h3 {
   font-family: 'Hind', sans-serif;
+  font-size: 0.8em;
   font-weight: 700;
   outline: var(--construct);
   line-height: var(--h3);
@@ -121,6 +122,11 @@ p {
 
 .page-headline {
   margin-left: 500px;
+  font-family: 'Hind', sans-serif;
+  font-size: 3em;
+  font-weight: 700;
+  outline: var(--construct);
+  line-height: var(--h1);
 }
 
 main.index {
@@ -180,7 +186,7 @@ details {
 
 details:hover {
   cursor: pointer;
-  background-color:#1a5585;
+  background-color: #1a5585;
 }
 
 main.sell div.content {
@@ -230,10 +236,12 @@ button {
   font-size: 1.2em;
   text-decoration: none;
   background-color: var(--pill_btn);
+  /* box-shadow: none; */
   /* height: 30px; */
   border-radius: 20px;
   /* margin: 0 auto; */
   padding: 2px 20px 2px 20px;
+  border-width: 0px;
 }
 
 fieldset {
@@ -254,9 +262,16 @@ main.contact fieldset {
   /* width: auto; */
 }
 
+legend {
+  text-align: center;
+  /* margin: 0 auto; */
+  /* padding: 0 1em; */
+}
+
 label {
   display: block;
-  margin-bottom: 1em;
+  text-align: center;
+  margin-top: 1em;
 }
 
 input {

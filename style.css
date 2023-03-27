@@ -16,8 +16,8 @@ body {
     'header header  header'
     'main   main    main'
     'footer footer  footer';
-  max-width: 1920px;
-  /* max-height: 1080px; */
+  /* max-width: 1920px; */
+  max-width: 120rem;
   color: var(--text);
   background-color: var(--bg);
   margin: 0 auto;
@@ -31,12 +31,14 @@ header {
   align-items: center;
   margin-bottom: auto;
   width: 100%;
-  padding: 50px;
+  /* padding: 50px; */
+  padding: 3.125rem;
 }
 
 header img.logo_big {
   outline: var(--construct);
-  width: 250px;
+  /* width: 250px; */
+  width: 15.625rem;
 }
 
 div.connect_btn {
@@ -45,14 +47,17 @@ div.connect_btn {
   align-items: center;
   position: relative;
   /* left: 450px; */
-  width: 110px;
-  height: 110px;
+  /* width: 110px; */
+  width: 6.875rem;
+  /* height: 110px; */
+  height: 6.875rem;
 }
 
 img.hex_header {
   outline: var(--construct);
   position: absolute;
-  left: -50px;
+  /* left: -50px; */
+  left: -3.125rem;
   /* width: auto;
   height: auto; */
 }
@@ -60,7 +65,8 @@ img.hex_header {
 img.hex_header:hover {
   outline: var(--construct);
   position: absolute;
-  left: -50px;
+  /* left: -50px; */
+  left: -3.125rem;
   rotate: 90deg;
 }
 
@@ -124,8 +130,9 @@ p {
   line-height: var(--h3);
 }
 
-.page-headline {
-  margin-left: 500px;
+.homepage-headline {
+  /* margin-left: 500px; */
+  margin-left: 31.25rem;
   font-family: 'Hind', sans-serif;
   font-size: 3em;
   font-weight: 700;
@@ -134,31 +141,36 @@ p {
 }
 
 main.index {
-  padding: 20px;
+  /* padding: 20px; */
+  padding: 1.25rem;
 }
 
 main.buy {
-  max-width: 1300px;
-  padding: 20px;
+  /* max-width: 1300px; */
+  max-width: 81.25rem;
+  /* padding: 20px; */
+  padding: 1.25rem;
   margin: 0 auto;
 }
 
-main.sell {
-  width: 1600px;
+/* main.sell {
+  width: auto;
   padding: 20px;
   margin: 0 auto;
-}
+} */
 
 main.about {
   width: 40em;
-  padding: 20px;
+  /* padding: 20px; */
+  padding: 1.25rem;
   margin: 0 auto;
   font-size: 1.2rem;
 }
 
 main.contact {
   width: 40em;
-  padding: 20px;
+  /* padding: 20px; */
+  padding: 1.25rem;
   margin: 0 auto;
   font-size: 1.2rem;
   text-align: left;
@@ -203,16 +215,20 @@ main.sell div.content aside {
   outline: var(--construct);
   font-family: 'Heebo', sans-serif;
   font-weight: 400;
-  width: 30rem;
+  width: 30em;
 }
 
 div.slider-container {
   outline: var(--construct);
   position: relative;
-  top: -100px;
-  left: 100px;
-  width: 500px;
-  height: 260px;
+  /* top: -100px; */
+  top: -6.25rem;
+  /* left: 100px; */
+  left: 6.25rem;
+  /* width: 500px; */
+  width: 31.25rem;
+  /* height: 260px; */
+  height: 16.25rem;
   margin: 0 auto;
 }
 
@@ -224,8 +240,10 @@ div.slider-container .slider {
   position: relative;
   padding: 0;
   margin: 0;
-  top: -580px;
-  left: 400px;
+  /* top: -580px; */
+  top: -36.25rem;
+  /* left: 400px; */
+  left: 25rem;
 }
 
 ul.nav-list {
@@ -242,10 +260,12 @@ button {
   background-color: var(--pill_btn);
   /* box-shadow: none; */
   /* height: 30px; */
-  border-radius: 20px;
+  /* border-radius: 20px; */
+  border-radius: 1.25rem;
   /* margin: 0 auto; */
-  padding: 2px 20px 2px 20px;
-  border-width: 0px;
+  /* padding: 2px 20px; */
+  padding: 0.125rem 1.25rem;
+  border-width: 0rem;
 }
 
 fieldset {
@@ -260,9 +280,11 @@ fieldset {
 main.contact fieldset {
   /* margin: 0 auto; */
   padding: 2em;
-  border-radius: 10px;
+  /* border-radius: 10px; */
+  border-radius: 0.625rem;
   border-color: #1a5585;
-  border-width: 5px;
+  /* border-width: 5px; */
+  border-width: 0.3125rem;
   /* width: auto; */
 }
 
@@ -300,7 +322,8 @@ main.contact input {
 }
 
 ul.nav-list li {
-  padding: 10px;
+  /* padding: 10px; */
+  padding: 0.625rem;
 }
 
 nav ul a:hover,
@@ -319,8 +342,10 @@ footer {
   justify-content: space-evenly;
   grid-area: footer;
   width: 100%;
-  height: 170px;
-  padding-top: 20px;
+  /* height: 170px; */
+  height: 10.625rem;
+  /* padding-top: 20px; */
+  padding-top: 1.25rem;
 }
 
 footer div {
@@ -329,18 +354,25 @@ footer div {
   font-family: 'Heebo';
   font-weight: 400;
   font-size: 1em;
-  width: 200px;
+  /* width: 200px; */
+  width: 12.5rem;
+}
+
+.hamburger {
+  display: none;
 }
 
 @media only screen and (max-width: 1650px) {
   .page-headline {
-    margin-left: 400px;
+    /* margin-left: 400px; */
+    margin-left: 25rem;
   }
 }
 
 @media only screen and (max-width: 1440px) {
   .page-headline {
-    margin-left: 300px;
+    /* margin-left: 300px; */
+    margin-left: 18.75rem;
   }
   nav ul.nav-list a,
   button {
@@ -352,15 +384,18 @@ footer div {
     background-color: var(--pill_btn);
     /* box-shadow: none; */
     /* height: 30px; */
-    border-radius: 20px;
+    /* border-radius: 20px; */
+    border-radius: 1.25rem;
     /* margin: 0 auto; */
-    padding: 2px 15px;
+    /* padding: 2px 15px; */
+    padding: 0.125rem 0.9375rem;
   }
 }
 
-@media only screen and (max-width: 1440px) {
+@media only screen and (max-width: 1024px) {
   .page-headline {
-    margin-left: 100px;
+    /* margin-left: 100px; */
+    margin-left: 6.25rem;
   }
   nav ul.nav-list a,
   button {
@@ -369,8 +404,101 @@ footer div {
     background-color: var(--pill_btn);
     /* box-shadow: none; */
     /* height: 30px; */
-    border-radius: 20px;
+    /* border-radius: 20px; */
+    border-radius: 1.25rem;
     /* margin: 0 auto; */
     padding: 2px 15px;
+  }
+  header {
+    outline: var(--construct);
+    display: block;
+    /* justify-content: space-between; */
+    grid-area: header;
+    /* align-items: center; */
+    margin-bottom: auto;
+    /* width: 100%; */
+    /* padding: 50px; */
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  body {
+    background-image: url('assets/img/Vector_mobile_bg_.png');
+  }
+  html {
+    margin: 0;
+    padding: 0;
+    width: 0;
+  }
+
+  header {
+    display: contents;
+  }
+  header img.logo_big {
+    /* display: none; */
+    outline: var(--construct);
+    /* width: 142px; */
+    width: 8.875rem;
+    margin: 0 auto;
+  }
+
+  div.connect_btn {
+    margin-top: 10em;
+  }
+
+  nav {
+    display: none;
+  }
+  .hamburger {
+    outline: var(--construct);
+    display: block;
+    position: relative;
+    top: 4em;
+    left: -4em;
+  }
+
+  h1.page-headline {
+    margin: 0;
+  }
+
+  main.sell {
+    width: auto;
+    margin: 0 auto;
+  }
+
+  main.sell div.content {
+    display: block;
+    justify-content: center;
+  }
+
+  /* fieldset {
+    width: auto;
+  } */
+
+  /* legend {
+    width: 430px;
+    margin: 0 auto;
+  } */
+
+  /* /* label {
+    width: auto;
+    margin: 0 auto;
+  } */
+
+  /* input {
+    width: auto;
+    margin: 0 auto;
+  }  */
+
+  .slider {
+    display: none;
+  }
+
+  .imagehex {
+    margin: 0;
+  }
+
+  footer {
+    display: none;
   }
 }

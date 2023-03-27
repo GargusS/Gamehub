@@ -331,3 +331,46 @@ footer div {
   font-size: 1em;
   width: 200px;
 }
+
+@media only screen and (max-width: 1650px) {
+  .page-headline {
+    margin-left: 400px;
+  }
+}
+
+@media only screen and (max-width: 1440px) {
+  .page-headline {
+    margin-left: 300px;
+  }
+  nav ul.nav-list a,
+  button {
+    color: var(--linktext);
+    font-family: 'Hind', sans-serif;
+    font-weight: 700;
+    font-size: 1em;
+    text-decoration: none;
+    background-color: var(--pill_btn);
+    /* box-shadow: none; */
+    /* height: 30px; */
+    border-radius: 20px;
+    /* margin: 0 auto; */
+    padding: 2px 15px;
+  }
+}
+
+@media only screen and (max-width: 1440px) {
+  .page-headline {
+    margin-left: 100px;
+  }
+  nav ul.nav-list a,
+  button {
+    display: flex;
+    text-decoration: none;
+    background-color: var(--pill_btn);
+    /* box-shadow: none; */
+    /* height: 30px; */
+    border-radius: 20px;
+    /* margin: 0 auto; */
+    padding: 2px 15px;
+  }
+}

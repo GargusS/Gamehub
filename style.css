@@ -55,6 +55,7 @@ div.connect_btn {
 
 img.hex_header {
   outline: var(--construct);
+  /* width: 12.5em */
   position: absolute;
   /* left: -50px; */
   left: -3.125rem;

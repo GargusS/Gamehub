@@ -1,5 +1,5 @@
 :root {
-  /* --construct: 2px solid lime; */
+  --construct: 2px solid lime;
   --bg: #0a1b2b;
   --pill_btn: #1a5585;
   --pill_btn_hover: #45a9d340;
@@ -422,81 +422,56 @@ footer div {
   }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (min-width: 375px) and (max-width: 599px) {
+  /* html {
+    max-width: 100%;
+    margin: 0;
+  } */
   body {
     background-image: url('assets/img/Vector_mobile_bg_.png');
   }
-  html {
-    margin: 0;
-    padding: 0;
-    width: 0;
-  }
 
   header {
-    display: contents;
+    padding: 0;
+    width: 320px;
   }
-  header img.logo_big {
-    /* display: none; */
-    outline: var(--construct);
-    /* width: 142px; */
-    width: 8.875rem;
+
+  main.index {
+    width: 320px;
+    height: 1000px;
     margin: 0 auto;
-  }
-
-  div.connect_btn {
-    margin-top: 10em;
-  }
-
-  nav {
-    display: none;
+    padding: 0;
   }
   .hamburger {
-    outline: var(--construct);
     display: block;
-    position: relative;
-    top: 4em;
-    left: -4em;
+    position: absolute;
+    top: 200px;
+    left: 300px;
   }
 
-  h1.page-headline {
-    margin: 0;
-  }
-
-  main.sell {
-    width: auto;
-    margin: 0 auto;
-  }
-
-  main.sell div.content {
-    display: block;
-    justify-content: center;
-  }
-
-  /* fieldset {
-    width: auto;
-  } */
-
-  /* legend {
-    width: 430px;
-    margin: 0 auto;
-  } */
-
-  /* /* label {
-    width: auto;
-    margin: 0 auto;
-  } */
-
-  /* input {
-    width: auto;
-    margin: 0 auto;
-  }  */
-
-  .slider {
+  .nav-list {
     display: none;
   }
 
-  .imagehex {
-    margin: 0;
+  header img.logo-big {
+    margin: 0 auto;
+    height: 10px;
+  }
+
+  .homepage-headline {
+    width: 10em;
+    display: block;
+    zoom: 60%;
+    margin: 0 auto;
+  }
+
+  .slider-container {
+    display: block;
+    zoom: 40%;
+    margin: 0 auto;
+  }
+
+  .astralis {
   }
 
   footer {

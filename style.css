@@ -1,5 +1,5 @@
 :root {
-  --construct: 2px solid lime;
+  /* --construct: 2px solid lime; */
   --bg: #0a1b2b;
   --pill_btn: #1a5585;
   --pill_btn_hover: #45a9d340;
@@ -472,6 +472,8 @@ footer div {
   }
 
   .astralis {
+    padding: 36em 0;
+    margin: auto;
   }
 
   footer {

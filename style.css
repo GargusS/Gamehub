@@ -154,11 +154,11 @@ main.buy {
   margin: 0 auto;
 }
 
-/* main.sell {
+main.sell {
   width: auto;
   padding: 20px;
   margin: 0 auto;
-} */
+}
 
 main.about {
   width: 40em;
@@ -451,12 +451,20 @@ footer div {
   }
 
   main.index {
-    overflow-x: hidden;
     width: 320px;
     height: 1000px;
     margin: 0 auto;
     padding: 0;
   }
+
+  main.sell {
+    margin: 8em auto 0 auto;
+  }
+
+  main.sell div.content aside{
+    display: none;
+  }
+
   .hamburger {
     display: block;
     position: absolute;

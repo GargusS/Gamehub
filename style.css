@@ -53,6 +53,10 @@ div.connect_btn {
   height: 6.875rem;
 }
 
+div.mobile_connect_btn{
+  display: none;
+}
+
 img.hex_header {
   outline: var(--construct);
   /* width: 12.5em */
@@ -131,7 +135,7 @@ p {
   line-height: var(--h3);
 }
 
-.homepage-headline {
+h1.homepage-headline {
   /* margin-left: 500px; */
   margin-left: 31.25rem;
   font-family: 'Hind', sans-serif;
@@ -361,89 +365,73 @@ footer div {
 
 .hamburger {
   display: none;
-}
-
-@media only screen and (max-width: 1650px) {
-  .page-headline {
-    /* margin-left: 400px; */
-    margin-left: 25rem;
-  }
-}
-
-@media only screen and (max-width: 1440px) {
-  .page-headline {
-    /* margin-left: 300px; */
-    margin-left: 18.75rem;
-  }
-  nav ul.nav-list a,
-  button {
-    color: var(--linktext);
-    font-family: 'Hind', sans-serif;
-    font-weight: 700;
-    font-size: 1em;
-    text-decoration: none;
-    background-color: var(--pill_btn);
-    /* box-shadow: none; */
-    /* height: 30px; */
-    /* border-radius: 20px; */
-    border-radius: 1.25rem;
-    /* margin: 0 auto; */
-    /* padding: 2px 15px; */
-    padding: 0.125rem 0.9375rem;
-  }
-}
-
-@media only screen and (max-width: 1024px) {
-  .page-headline {
-    /* margin-left: 100px; */
-    margin-left: 6.25rem;
-  }
-  nav ul.nav-list a,
-  button {
-    display: flex;
-    text-decoration: none;
-    background-color: var(--pill_btn);
-    /* box-shadow: none; */
-    /* height: 30px; */
-    /* border-radius: 20px; */
-    border-radius: 1.25rem;
-    /* margin: 0 auto; */
-    padding: 2px 15px;
-  }
-  header {
-    outline: var(--construct);
-    display: block;
-    /* justify-content: space-between; */
-    grid-area: header;
-    /* align-items: center; */
-    margin-bottom: auto;
-    /* width: 100%; */
-    /* padding: 50px; */
-  }
+  position: relative;
+  top: 20em;
 }
 
 @media only screen and (min-width: 375px) and (max-width: 599px) {
   body {
-    width: 375px;
+    width: 400px;
     margin: 0 auto;
     background-image: url('assets/img/Vector_mobile_bg_.png');
   }
 
   header {
-    padding: 0;
+    width: 100%;
+    margin: 0 auto;
+    /* padding: 0; */
   }
 
-  img.logo_big {
-    zoom: 70%;
-    margin: 3em auto 0 auto;
+  body header a {
+    width: 10em;
+    margin: 0 auto;
+  }
+
+  div.content {
+    max-width: 430px;
   }
 
   div.connect_btn {
     display: none;
   }
 
+  div.mobile_connect_btn {
+    display: block;
+    position:relative;
+    top: 4em;
+    left: 4em;
+  }
+
+  .mobile_connect {
+    display: block;
+  }
+
+  img.mobile_hex_header {
+    display: block;
+    position: relative;
+    /* margin: 0; */
+    /* width: 8em; */
+    left: 6em;
+  }
+
+  a.mobile_connect {
+    position: relative;
+    bottom: 6em;
+    left: 1.3em;
+    width: 7em;
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'Heebo', sans-serif;
+    font-weight: 700;
+    color: #ffffff;
+    text-decoration: none;
+    text-align: center;
+  }
+
   a.imagehex {
     display: block;
+    position: relative;
+    left: 20em;
     margin: 25em auto;
     padding: 0;
     width: auto;
@@ -451,25 +439,23 @@ footer div {
   }
 
   main.index {
-    width: 320px;
-    height: 1000px;
+    /* width: 320px; */
+    /* height: 1000px; */
     margin: 0 auto;
     padding: 0;
   }
 
   main.sell {
-    margin: 8em auto 0 auto;''
+    margin: 8em auto 0 auto;
   }
 
-  main.sell div.content aside{
+  main.sell div.content aside {
     display: none;
   }
 
   .hamburger {
     display: block;
-    position: absolute;
-    top: 11em;
-    left: 22em;
+    top: 0em;
   }
 
   .nav-list {
@@ -482,13 +468,17 @@ footer div {
   }
 
   h1.homepage-headline {
-    width: 10em;
+    margin-left: 0;
+    /* width: 1em; */
     /* display: block; */
-    zoom: 60%;
-    font-size: 6em;
-    line-height: 1em;
-    margin: 2em auto 0 auto;
-    padding: 0;
+    /* position: relative; */
+    /* text-align: left; */
+    /* left: -0.25em; */
+    /* zoom: 60%; */
+    /* font-size: 6em; */
+    /* line-height: 1em; */
+    /* margin: 2em auto 0 auto; */
+    /* padding: 0; */
   }
 
   .slider-container {
@@ -498,7 +488,9 @@ footer div {
   }
 
   img.slider {
-    margin: 25em auto;
+    display: block;
+    position: relative;
+    left: -6em;
   }
 
   div.slider-container {

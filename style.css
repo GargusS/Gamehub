@@ -10,7 +10,9 @@
   --h3: 1.8em;
 }
 
-body {
+html body {
+  /* max-width: 100%; */
+  overflow-x: hidden;
   display: grid;
   grid-template-areas:
     'header header  header'
@@ -53,7 +55,7 @@ div.connect_btn {
   height: 6.875rem;
 }
 
-div.mobile_connect_btn{
+div.mobile_connect_btn {
   display: none;
 }
 
@@ -369,7 +371,8 @@ footer div {
   top: 20em;
 }
 
-@media only screen and (min-width: 375px) and (max-width: 599px) {
+/* Mobile Size */
+@media only screen and (min-width: 375px) and (max-width: 768px) {
   body {
     width: 400px;
     margin: 0 auto;
@@ -397,7 +400,7 @@ footer div {
 
   div.mobile_connect_btn {
     display: block;
-    position:relative;
+    position: relative;
     top: 4em;
     left: 4em;
   }
@@ -417,9 +420,9 @@ footer div {
   a.mobile_connect {
     position: relative;
     bottom: 6em;
-    left: 1.3em;
+    left: 7.2em;
     width: 7em;
-    margin: 0 auto;
+    /* margin: 0 auto; */
     padding: 0;
     font-family: 'Heebo', sans-serif;
     font-weight: 700;
@@ -455,7 +458,153 @@ footer div {
 
   .hamburger {
     display: block;
-    top: 0em;
+    top: 4em;
+    left: 2em;
+  }
+
+  .nav-list {
+    display: none;
+  }
+
+  header img.logo-big {
+    margin: 0 auto;
+    height: 1em;
+  }
+
+  h1.homepage-headline {
+    margin-left: 0;
+    /* width: 1em; */
+    /* display: block; */
+    /* position: relative; */
+    /* text-align: left; */
+    /* left: -0.25em; */
+    /* zoom: 60%; */
+    /* font-size: 6em; */
+    /* line-height: 1em; */
+    /* margin: 2em auto 0 auto; */
+    /* padding: 0; */
+  }
+
+  .slider-container {
+    display: block;
+    zoom: 40%;
+    margin: 0 auto;
+  }
+
+  img.slider {
+    display: block;
+    position: relative;
+    left: -6em;
+  }
+
+  div.slider-container {
+    /* display: none; */
+    margin: 0;
+    padding: 0;
+  }
+
+  img.astralis {
+    padding: 36em 0;
+    margin: 0 auto;
+  }
+
+  footer {
+    display: none;
+  }
+}
+
+/* Tablet size */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  html {
+  }
+
+  body {
+    width: 400px;
+    margin: 0 auto;
+    background-image: url('assets/img/Vector_mobile_bg_.png');
+  }
+
+  header {
+    width: 100%;
+    margin: 0 auto;
+    /* padding: 0; */
+  }
+
+  body header a {
+    width: 10em;
+    margin: 0 auto;
+  }
+
+  div.content {
+    max-width: 430px;
+  }
+
+  div.connect_btn {
+    display: none;
+  }
+
+  div.mobile_connect_btn {
+    display: block;
+    position: relative;
+    top: 4em;
+    left: 4em;
+  }
+
+  .mobile_connect {
+    display: block;
+  }
+
+  img.mobile_hex_header {
+    display: block;
+    position: relative;
+    /* margin: 0; */
+    /* width: 8em; */
+    left: 6em;
+  }
+
+  a.mobile_connect {
+    position: relative;
+    bottom: 6em;
+    left: 7.2em;
+    width: 7em;
+    /* margin: 0 auto; */
+    padding: 0;
+    font-family: 'Heebo', sans-serif;
+    font-weight: 700;
+    color: #ffffff;
+    text-decoration: none;
+    text-align: center;
+  }
+
+  a.imagehex {
+    display: block;
+    position: relative;
+    left: 20em;
+    margin: 25em auto;
+    padding: 0;
+    width: auto;
+    height: auto;
+  }
+
+  main.index {
+    /* width: 320px; */
+    /* height: 1000px; */
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  main.sell {
+    margin: 8em auto 0 auto;
+  }
+
+  main.sell div.content aside {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+    top: 4em;
+    left: 2em;
   }
 
   .nav-list {

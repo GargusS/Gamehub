@@ -372,7 +372,7 @@ footer div {
 }
 
 /* Mobile Size */
-@media only screen and (min-width: 375px) and (max-width: 768px) {
+@media only screen and (min-width: 0px) and (max-width: 624px) {
   body {
     width: 400px;
     margin: 0 auto;
@@ -414,12 +414,13 @@ footer div {
     position: relative;
     /* margin: 0; */
     /* width: 8em; */
+    top: -5em;
     left: 6em;
   }
 
   a.mobile_connect {
     position: relative;
-    bottom: 6em;
+    bottom: 11em;
     left: 7.2em;
     width: 7em;
     /* margin: 0 auto; */
@@ -435,6 +436,7 @@ footer div {
     display: block;
     position: relative;
     left: 20em;
+    top: -60em;
     margin: 25em auto;
     padding: 0;
     width: auto;
@@ -459,7 +461,7 @@ footer div {
   .hamburger {
     display: block;
     top: 4em;
-    left: 2em;
+    /* left: 0em; */
   }
 
   .nav-list {
@@ -495,6 +497,7 @@ footer div {
     display: block;
     position: relative;
     left: -6em;
+    top: -19em;
   }
 
   div.slider-container {
@@ -514,7 +517,7 @@ footer div {
 }
 
 /* Tablet size */
-@media only screen and (min-width: 769px) and (max-width: 1024px) {
+@media only screen and (min-width: 625px) and (max-width: 1024px) {
   body {
     width: 400px;
     margin: 0 auto;
@@ -601,7 +604,7 @@ footer div {
   .hamburger {
     display: block;
     top: 4em;
-    left: 2em;
+    left: 10em;
   }
 
   .nav-list {
@@ -658,17 +661,17 @@ footer div {
 /* small Desktop size */
 @media only screen and (min-width: 1025px) and (max-width: 1350px) {
   body {
-    width: 400px;
+    width: 1025px;
     margin: 0 auto;
     background-image: url('assets/img/Vector_mobile_bg_.png');
   }
 
   header {
-    width: 100%;
-    margin: 0 auto;
-    /* padding: 0; */
-  }
-
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  } 
+  
   body header a {
     width: 10em;
     margin: 0 auto;
@@ -718,7 +721,7 @@ footer div {
   a.imagehex {
     display: block;
     position: relative;
-    left: 20em;
+    left: 5em;
     margin: 25em auto;
     padding: 0;
     width: auto;
@@ -741,13 +744,17 @@ footer div {
   }
 
   .hamburger {
-    display: block;
+    display: none;
     top: 4em;
     left: 2em;
   }
 
   .nav-list {
-    display: none;
+    display: block;
+    position: relative;
+    left: -48em;
+    top: 20em;
+    /* width: 800px; */
   }
 
   header img.logo-big {
@@ -756,29 +763,30 @@ footer div {
   }
 
   h1.homepage-headline {
-    margin-left: 0;
-    /* width: 1em; */
+    margin: 0 auto;
+    /* text-align: left; */
+    width: 8em;
+    height: 6em;
     /* display: block; */
     /* position: relative; */
     /* text-align: left; */
     /* left: -0.25em; */
     /* zoom: 60%; */
-    /* font-size: 6em; */
+    font-size: 4em;
     /* line-height: 1em; */
-    /* margin: 2em auto 0 auto; */
     /* padding: 0; */
   }
 
   .slider-container {
     display: block;
-    zoom: 40%;
+    zoom: 80%;
     margin: 0 auto;
   }
 
   img.slider {
     display: block;
     position: relative;
-    left: -6em;
+    left: -19em;
   }
 
   div.slider-container {

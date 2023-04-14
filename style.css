@@ -515,9 +515,6 @@ footer div {
 
 /* Tablet size */
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
-  html {
-  }
-
   body {
     width: 400px;
     margin: 0 auto;
@@ -658,11 +655,8 @@ footer div {
   }
 }
 
-/* Desktop size */
+/* small Desktop size */
 @media only screen and (min-width: 1025px) and (max-width: 1350px) {
-  html {
-  }
-
   body {
     width: 400px;
     margin: 0 auto;

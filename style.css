@@ -469,7 +469,7 @@ footer div {
   .hamburger {
     display: block;
     top: 4em;
-    /* left: 0em; */
+    left: -1em;
   }
 
   nav {
@@ -496,7 +496,7 @@ footer div {
     /* left: -0.25em; */
     /* zoom: 60%; */
     /* font-size: 6em; */
-    /* line-height: 1em; */
+    line-height: 1em;
     /* margin: 2em auto 0 auto; */
     /* padding: 0; */
   }

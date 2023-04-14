@@ -394,6 +394,14 @@ footer div {
     max-width: 430px;
   }
 
+  main.sell fieldset {
+    zoom: 40%;
+  }
+
+  main.sell input {
+    height: 200px;
+  }
+
   div.connect_btn {
     display: none;
   }
@@ -464,16 +472,22 @@ footer div {
     /* left: 0em; */
   }
 
+  nav {
+    display: hidden;
+  }
+
   .nav-list {
     display: none;
   }
 
-  header img.logo-big {
+  header img.logo_big {
     margin: 0 auto;
-    height: 1em;
   }
 
   h1.homepage-headline {
+    /* display: block; */
+    /* place-items: left; */
+    /* float: right; */
     margin-left: 0;
     /* width: 1em; */
     /* display: block; */
@@ -517,7 +531,7 @@ footer div {
 }
 
 /* Tablet size */
-@media only screen and (min-width: 625px) and (max-width: 1024px) {
+@media only screen and (min-width: 625px) and (max-width: 768px) {
   body {
     width: 400px;
     margin: 0 auto;
@@ -607,13 +621,17 @@ footer div {
     left: 10em;
   }
 
+  nav {
+    display: hidden;
+  }
+
   .nav-list {
     display: none;
   }
 
-  header img.logo-big {
+  header img.logo_big {
     margin: 0 auto;
-    height: 1em;
+    /* height: 1em; */
   }
 
   h1.homepage-headline {
@@ -659,19 +677,20 @@ footer div {
 }
 
 /* small Desktop size */
-@media only screen and (min-width: 1025px) and (max-width: 1350px) {
+@media only screen and (min-width: 769px) and (max-width: 1350px) {
   body {
-    width: 1025px;
+    width: 769px;
     margin: 0 auto;
     background-image: url('assets/img/Vector_mobile_bg_.png');
   }
 
   header {
-  width: 100%;
-  margin: 0 auto;
-  padding: 0;
-  } 
-  
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+  }
+
   body header a {
     width: 10em;
     margin: 0 auto;
@@ -736,7 +755,7 @@ footer div {
   }
 
   main.sell {
-    margin: 8em auto 0 auto;
+    /* margin: 0 auto; */
   }
 
   main.sell div.content aside {
@@ -745,21 +764,16 @@ footer div {
 
   .hamburger {
     display: none;
-    top: 4em;
-    left: 2em;
   }
 
-  .nav-list {
-    display: block;
-    position: relative;
-    left: -48em;
-    top: 20em;
-    /* width: 800px; */
-  }
-
-  header img.logo-big {
-    margin: 0 auto;
-    height: 1em;
+  ul.nav-list {
+    /* display: flex; */
+    font-size: 0.4rem;
+    /* margin-top: 0em; */
+    /* left: -10em; */
+    /* top: 20em; */
+    /* margin: 0 auto; */
+    padding: 0;
   }
 
   h1.homepage-headline {
@@ -801,6 +815,6 @@ footer div {
   }
 
   footer {
-    display: none;
+    display: flex;
   }
 }

@@ -374,24 +374,17 @@ footer div {
 /* Mobile Size */
 @media only screen and (min-width: 0px) and (max-width: 624px) {
   body {
-    width: 400px;
-    margin: 0 auto;
     background-image: url('assets/img/Vector_mobile_bg_.png');
   }
 
   header {
     width: 100%;
     margin: 0 auto;
-    /* padding: 0; */
   }
 
   body header a {
     width: 10em;
     margin: 0 auto;
-  }
-
-  div.content {
-    max-width: 430px;
   }
 
   main.sell fieldset {
@@ -485,20 +478,8 @@ footer div {
   }
 
   h1.homepage-headline {
-    /* display: block; */
-    /* place-items: left; */
-    /* float: right; */
     margin-left: 0;
-    /* width: 1em; */
-    /* display: block; */
-    /* position: relative; */
-    /* text-align: left; */
-    /* left: -0.25em; */
-    /* zoom: 60%; */
-    /* font-size: 6em; */
     line-height: 1em;
-    /* margin: 2em auto 0 auto; */
-    /* padding: 0; */
   }
 
   .slider-container {
@@ -515,13 +496,12 @@ footer div {
   }
 
   div.slider-container {
-    /* display: none; */
     margin: 0;
     padding: 0;
   }
 
   img.astralis {
-    padding: 36em 0;
+    padding: 36em 0 2em 0;
     margin: 0 auto;
   }
 
@@ -679,16 +659,16 @@ footer div {
 /* small Desktop size */
 @media only screen and (min-width: 769px) and (max-width: 1350px) {
   body {
-    width: 769px;
-    margin: 0 auto;
+    /* width: 769px; */
+    /* margin: 0 auto; */
     background-image: url('assets/img/Vector_mobile_bg_.png');
   }
 
   header {
-    display: flex;
-    width: 100%;
+    /* display: flex; */
+    /* width: 100%; */
     margin: 0 auto;
-    padding: 10px;
+    /* padding: 10px; */
   }
 
   body header a {
@@ -767,13 +747,13 @@ footer div {
   }
 
   ul.nav-list {
-    /* display: flex; */
-    font-size: 0.4rem;
-    /* margin-top: 0em; */
-    /* left: -10em; */
-    /* top: 20em; */
-    /* margin: 0 auto; */
-    padding: 0;
+    position: absolute;
+    display: block;
+    font-size: 1rem;
+    margin-top: 0em;
+    left: 0;
+    top: 10em;
+    padding-left: 1em;
   }
 
   h1.homepage-headline {

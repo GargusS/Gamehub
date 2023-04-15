@@ -473,7 +473,7 @@ footer div {
     display: none;
   }
 
-  header img.logo_big {
+  header img.logo_big a {
     margin: 0 auto;
   }
 
@@ -511,7 +511,7 @@ footer div {
 }
 
 /* Tablet size */
-@media only screen and (min-width: 625px) and (max-width: 768px) {
+@media only screen and (min-width: 625px) and (max-width: 889px) {
   body {
     width: 400px;
     margin: 0 auto;
@@ -657,7 +657,7 @@ footer div {
 }
 
 /* small Desktop size */
-@media only screen and (min-width: 769px) and (max-width: 1620px) {
+@media only screen and (min-width: 890px) and (max-width: 1620px) {
   body {
     /* width: 769px; */
     /* margin: 0 auto; */
@@ -734,8 +734,18 @@ footer div {
     padding: 0;
   }
 
+  main.buy {
+    margin: 0 auto;
+  }
+
   main.sell {
     /* margin: 0 auto; */
+  }
+
+  main.buy h3 {
+    margin: 0 auto 4em auto;
+    display: block;
+    width: 70%;
   }
 
   main.sell div.content aside {
@@ -747,13 +757,23 @@ footer div {
   }
 
   ul.nav-list {
-    position: absolute;
-    display: block;
-    font-size: 1rem;
-    margin-top: 0em;
-    left: 0;
-    top: 10em;
-    padding-left: 1em;
+    display: flex;
+    align-items: center;
+    flex-wrap:wrap;
+    /* align-items: flex-end; */
+    /* align-self:flex-start; */
+    /* display: block; */
+    /* font-size: 1rem; */
+    /* margin-top: 0em; */
+    /* margin: 0 auto; */
+    /* left: 0; */
+    /* top: 10em; */
+    /* padding-left: 1em; */
+  }
+
+  header img.logo_big {
+    margin: 0 auto;
+    /* height: 1em; */
   }
 
   h1.homepage-headline {

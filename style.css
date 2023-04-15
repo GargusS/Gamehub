@@ -744,7 +744,7 @@ footer div {
 
   main.buy h3 {
     margin: 0 auto 4em auto;
-    display: block;
+    /* display: block; */
     width: 70%;
   }
 

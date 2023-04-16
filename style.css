@@ -275,7 +275,7 @@ legend {
 }
 
 legend.contact {
-  text-align: left;
+  text-align: center;
   padding: 0 1em;
 }
 
@@ -287,18 +287,21 @@ label {
 
 label.contact {
   display: block;
-  text-align: left;
+  text-align: center;
   margin-top: 1em;
 }
 
 input {
-  margin-bottom: 3em;
-  width: 45em;
+  margin-bottom: 1em;
+  width: 100%;
 }
 
-main.contact input {
-  margin-bottom: 3em;
-  width: 20em;
+.contact input {
+  margin-bottom: 1em;
+  width: 100%;
+}
+textarea#message.contact {
+  width: 100%;
 }
 
 ul.nav-list li {
@@ -359,12 +362,13 @@ footer div {
     margin: 0 auto;
   }
 
-  main.sell fieldset {
-    zoom: 40%;
+  main.sell form {
+    width: 100%;
   }
 
   main.sell input {
     height: 200px;
+    width: 100%;
   }
 
   div.connect_btn {

@@ -229,9 +229,7 @@ div.slider-container .slider {
   position: relative;
   padding: 0;
   margin: 0;
-
   top: -36.25rem;
-
   left: 25rem;
 }
 
@@ -247,9 +245,7 @@ button {
   font-size: 1.2em;
   text-decoration: none;
   background-color: var(--pill_btn);
-
   border-radius: 1.25rem;
-
   padding: 0.125rem 1.25rem;
   border-width: 0rem;
 }
@@ -659,7 +655,6 @@ footer div {
     bottom: 6em;
     left: 7.2em;
     width: 7em;
-
     padding: 0;
     font-family: 'Heebo', sans-serif;
     font-weight: 700;
@@ -717,10 +712,8 @@ footer div {
 
   h1.homepage-headline {
     margin: 0 auto;
-
     width: 8em;
     height: 6em;
-
     font-size: 4em;
   }
 
@@ -737,7 +730,6 @@ footer div {
   }
 
   div.slider-container {
-    /* display: none; */
     margin: 0;
     padding: 0;
   }

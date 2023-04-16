@@ -142,6 +142,7 @@ main.index {
 main.buy {
   max-width: 81.25rem;
   padding: 1.25rem;
+  display: flex;
   margin: 0 auto;
 }
 
@@ -216,13 +217,9 @@ main.sell div.content aside {
 div.slider-container {
   outline: var(--construct);
   position: relative;
-
   top: -6.25rem;
-
   left: 6.25rem;
-
   width: 31.25rem;
-
   height: 16.25rem;
   margin: 0 auto;
 }
@@ -265,10 +262,8 @@ fieldset {
 
 main.contact fieldset {
   padding: 2em;
-
   border-radius: 0.625rem;
   border-color: #1a5585;
-
   border-width: 0.3125rem;
 }
 
@@ -346,6 +341,34 @@ footer div {
   display: none;
   position: relative;
   top: 20em;
+}
+
+.card-container {
+  width: 15em;
+  display: flex;
+}
+
+.card {
+  background-color: #ffffff50;
+  width: 200px;
+  text-align: center;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
+  color: #fff;
+  font-family: 'Heebo';
+  font-weight: 400;
+  font-size: 1em;
+}
+
+.card-img {
+  border-radius: 8px;
+  margin: 3px;
+}
+
+.card-button {
+  background-color: var(--pill_btn);
+  margin: 10px auto;
 }
 
 /* Mobile Size */
@@ -432,6 +455,11 @@ footer div {
 
   main.sell div.content aside {
     display: none;
+  }
+
+  main.buy {
+    display: flex;
+    flex-direction: column;
   }
 
   .hamburger {
@@ -566,6 +594,12 @@ footer div {
     display: none;
   }
 
+  main.buy {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+
   .hamburger {
     display: block;
     top: 4em;
@@ -685,6 +719,7 @@ footer div {
   }
 
   main.buy {
+    display: flex;
     margin: 0 auto;
   }
 
@@ -694,7 +729,6 @@ footer div {
 
   main.buy h3 {
     margin: 0 auto 4em auto;
-
     width: 70%;
   }
 

@@ -351,9 +351,10 @@ footer div {
 .card {
   background-color: #ffffff50;
   width: 400px;
+  height: 500px;
   text-align: center;
   border-radius: 10px;
-  margin: 0 auto;
+  margin: 10px;
   padding: 10px;
   color: #fff;
   font-family: 'Heebo';
@@ -368,6 +369,7 @@ footer div {
 .card-button {
   background-color: var(--pill_btn);
   margin: 10px auto;
+  height: 60px;
 }
 
 /* Mobile Size */

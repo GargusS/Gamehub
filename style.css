@@ -166,6 +166,12 @@ main.contact {
   text-align: left;
 }
 
+main.cart {
+  max-width: 81.25rem;
+  padding: 1.25rem;
+  margin: 0 auto;
+}
+
 .astralis {
   outline: var(--construct);
 }

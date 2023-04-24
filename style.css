@@ -167,6 +167,17 @@ main.about {
   font-family: 'Hind', sans-serif;
 }
 
+main.about h1 {
+  width: 80%;
+  text-align: center;
+  margin: 0 auto;
+  padding-bottom: 1.25rem;
+}
+
+main.about p {
+  padding-bottom: 1.25rem;
+}
+
 main.contact {
   width: 40em;
   padding: 1.25rem;
@@ -239,10 +250,6 @@ div.slider-container {
   width: 31.25rem;
   height: 16.25rem;
   margin: 0 auto;
-}
-
-div.slider-container .slider {
-  zoom: 0%;
 }
 
 .imagehex {
@@ -452,7 +459,7 @@ div.card {
   }
 
   a.imagehex {
-    display: block;
+    display: none;
     position: relative;
     left: 20em;
     top: -60em;
@@ -494,13 +501,14 @@ div.card {
   }
 
   h1.homepage-headline {
-    margin-left: 0;
+    padding-top: 50px;
+    margin: 0 auto;
     line-height: 1em;
   }
 
   .slider-container {
     display: block;
-    zoom: 40%;
+    /* zoom: 40%; */
     margin: 0 auto;
   }
 
@@ -508,11 +516,13 @@ div.card {
     display: block;
     position: relative;
     left: -6em;
-    top: -19em;
+    top: 5em;
   }
 
   div.slider-container {
-    margin: 0;
+    display: block;
+    width: 200px;
+    margin: 0 auto;
     padding: 0;
   }
 
@@ -545,7 +555,7 @@ div.card {
   }
 
   div.content {
-    max-width: 430px;
+    max-width: 90%;
   }
 
   div.connect_btn {
@@ -560,13 +570,12 @@ div.card {
   }
 
   .mobile_connect {
-    display: block;
+    display: block;    
   }
 
   img.mobile_hex_header {
     display: block;
     position: relative;
-
     left: 6em;
   }
 
@@ -575,7 +584,6 @@ div.card {
     bottom: 6em;
     left: 7.2em;
     width: 7em;
-
     padding: 0;
     font-family: 'Heebo', sans-serif;
     font-weight: 700;
@@ -585,7 +593,7 @@ div.card {
   }
 
   a.imagehex {
-    display: block;
+    display: none;
     position: relative;
     left: 20em;
     margin: 25em auto;
@@ -609,10 +617,7 @@ div.card {
   .hamburger {
     display: block;
     top: 4em;
-  }
-
-  nav {
-    display: hidden;
+    left: -2em;
   }
 
   .nav-list {
@@ -629,14 +634,15 @@ div.card {
 
   .slider-container {
     display: block;
-    zoom: 40%;
-    margin: 0 auto;
+    left: 0px;
+    /* margin: 0 auto; */
   }
 
   img.slider {
     display: block;
+    width: 300px;
     position: relative;
-    left: -6em;
+    top: 10em;
   }
 
   div.slider-container {
@@ -660,8 +666,8 @@ div.card {
     /* width: 100%; */
     background-image: url('assets/img/Vector_mobile_bg_.png');
   }
-
-  /* header {
+/* 
+  header {
     margin: 0 auto;
     width: 100%;
     background-color: antiquewhite;
@@ -671,10 +677,6 @@ div.card {
     width: 100%;
     margin: 0 auto;
   }
-  /* 
-  div.content {
-    max-width: 430px;
-  } */
 
   div.connect_btn {
     display: none;
@@ -712,13 +714,7 @@ div.card {
   }
 
   a.imagehex {
-    display: block;
-    position: relative;
-    left: 5em;
-    margin: 25em auto;
-    padding: 0;
-    width: auto;
-    height: auto;
+    display: none;
   }
 
   main.index {
@@ -744,10 +740,13 @@ div.card {
     flex-wrap: wrap;
     margin: 0px;
     padding: 0px;
+    width: 850px;
   }
 
   header img.logo_big {
-    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px;
   }
 
   h1.homepage-headline {
@@ -758,13 +757,12 @@ div.card {
   }
 
   .slider-container {
-    display: block;
-    zoom: 80%;
+    display: flex;
     margin: 0 auto;
   }
 
   img.slider {
-    display: block;
+    display: flex;
     position: relative;
     left: -19em;
   }

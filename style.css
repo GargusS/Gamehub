@@ -11,7 +11,7 @@
 }
 
 html body {
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   display: grid;
   grid-template-areas:
     'header header  header'
@@ -91,32 +91,41 @@ main {
   height: 1fr;
 }
 
-h1 {
-  font-family: 'Hind', sans-serif;
-  font-size: 2em;
-  font-weight: 700;
+h1,
+h2,
+h3 {
   outline: var(--construct);
+  font-family: 'Hind', sans-serif;
+  font-weight: 700;
+}
+h1 {
+  font-size: 2em;
   line-height: var(--h1);
 }
 
 h2,
 label {
+  outline: var(--construct);
   font-family: 'Hind', sans-serif;
   font-size: 1.3em;
   font-weight: 700;
-  outline: var(--construct);
 }
 
 h3 {
-  font-family: 'Hind', sans-serif;
   font-size: 0.8em;
-  font-weight: 700;
-  outline: var(--construct);
   line-height: var(--h3);
 }
 
 h3.grading {
   font-size: 1.3em;
+}
+
+main.buy h3 {
+  color: red;
+  background-color: bisque;
+  display: block;
+  text-align: center;
+  /* padding: 20px; */
 }
 
 p {
@@ -127,6 +136,7 @@ p {
 }
 
 h1.homepage-headline {
+  width: 300px;
   margin-left: 31.25rem;
   font-family: 'Hind', sans-serif;
   font-size: 3em;
@@ -140,10 +150,17 @@ main.index {
 }
 
 main.buy {
-  max-width: 81.25rem;
-  padding: 1.25rem;
-  display: flex;
   margin: 0 auto;
+  width: 80%;
+  padding: 1.25rem;
+}
+
+h1.browse {
+  color: red;
+  background-color: bisque;
+  display: block;
+  text-align: center;
+  padding: 20px;
 }
 
 main.sell {
@@ -157,6 +174,7 @@ main.about {
   padding: 1.25rem;
   margin: 0 auto;
   font-size: 1.2rem;
+  font-family: 'Hind', sans-serif;
 }
 
 main.contact {
@@ -205,6 +223,15 @@ main.sell div.content {
   outline: var(--construct);
   display: flex;
   justify-content: space-evenly;
+}
+
+main.sell div.content h2 {
+  outline: var(--construct);
+  padding-bottom: 20px;
+}
+
+main.sell div.content button {
+  margin-top: 20px;
 }
 
 main.sell div.content aside {
@@ -258,13 +285,6 @@ fieldset {
   border-radius: 10px;
   border-color: #1a5585;
   border-width: 5px;
-}
-
-main.contact fieldset {
-  padding: 2em;
-  border-radius: 0.625rem;
-  border-color: #1a5585;
-  border-width: 0.3125rem;
 }
 
 legend {
@@ -322,34 +342,39 @@ footer {
   justify-content: space-evenly;
   grid-area: footer;
   width: 100%;
-
   height: 10.625rem;
-
   padding-top: 1.25rem;
 }
 
-footer div {
+.footer_adress,
+.footer_email {
   outline: var(--construct);
   margin-top: auto;
   font-family: 'Heebo';
   font-weight: 400;
   font-size: 1em;
-
-  width: 12.5rem;
+  width: 6rem;
 }
-
+.footer_phone {
+  outline: var(--construct);
+  margin-top: auto;
+  font-family: 'Heebo';
+  font-weight: 400;
+  font-size: 1em;
+  width: 16rem;
+}
 .hamburger {
   display: none;
   position: relative;
   top: 20em;
 }
 
-.card-container {
-  width: 15em;
+div.card-container {
   display: flex;
+  width: 15em;
 }
 
-.card {
+div.card {
   background-color: #ffffff50;
   width: 400px;
   height: 500px;
@@ -459,11 +484,6 @@ footer div {
     display: none;
   }
 
-  main.buy {
-    display: flex;
-    flex-direction: column;
-  }
-
   .hamburger {
     display: block;
     top: 4em;
@@ -518,8 +538,8 @@ footer div {
 /* Tablet size */
 @media only screen and (min-width: 625px) and (max-width: 889px) {
   body {
-    width: 400px;
-    margin: 0 auto;
+    width: 80%auto;
+    /* margin: 0 auto; */
     background-image: url('assets/img/Vector_mobile_bg_.png');
   }
 
@@ -597,15 +617,17 @@ footer div {
   }
 
   main.buy {
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* margin: 0 auto; */
+    width: 100%;
+    /* padding: 1.25rem; */
   }
 
   .hamburger {
     display: block;
     top: 4em;
-    left: 10em;
+    left: -10em;
   }
 
   nav {
@@ -654,21 +676,24 @@ footer div {
 /* small Desktop size */
 @media only screen and (min-width: 890px) and (max-width: 1620px) {
   body {
+    /* width: 100%; */
     background-image: url('assets/img/Vector_mobile_bg_.png');
   }
 
-  header {
+  /* header {
     margin: 0 auto;
-  }
+    width: 100%;
+    background-color: antiquewhite;
+  } */
 
   body header a {
-    width: 10em;
+    width: 100%;
     margin: 0 auto;
   }
-
+  /* 
   div.content {
     max-width: 430px;
-  }
+  } */
 
   div.connect_btn {
     display: none;
@@ -720,18 +745,8 @@ footer div {
     padding: 0;
   }
 
-  main.buy {
-    display: flex;
-    margin: 0 auto;
-  }
-
   main.sell {
     margin: 0 auto;
-  }
-
-  main.buy h3 {
-    margin: 0 auto 4em auto;
-    width: 70%;
   }
 
   main.sell div.content aside {
@@ -742,10 +757,16 @@ footer div {
     display: none;
   }
 
+  nav {
+    background-color: antiquewhite;
+  }
+
   ul.nav-list {
     display: flex;
-    align-items: center;
+    align-items: right;
     flex-wrap: wrap;
+    margin: 0px;
+    padding: 0px;
   }
 
   header img.logo_big {

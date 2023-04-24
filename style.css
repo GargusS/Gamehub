@@ -120,14 +120,6 @@ h3.grading {
   font-size: 1.3em;
 }
 
-main.buy h3 {
-  color: red;
-  background-color: bisque;
-  display: block;
-  text-align: center;
-  /* padding: 20px; */
-}
-
 p {
   font-family: 'Heebo', sans-serif;
   font-weight: 400;
@@ -150,14 +142,12 @@ main.index {
 }
 
 main.buy {
+  display: block;
   margin: 0 auto;
-  width: 80%;
-  padding: 1.25rem;
+  width: 75%;
 }
 
 h1.browse {
-  color: red;
-  background-color: bisque;
   display: block;
   text-align: center;
   padding: 20px;
@@ -370,6 +360,7 @@ footer {
 }
 
 div.card-container {
+  float: left;
   display: flex;
   width: 15em;
 }
@@ -615,19 +606,9 @@ div.card {
   main.sell div.content aside {
     display: none;
   }
-
-  main.buy {
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* margin: 0 auto; */
-    width: 100%;
-    /* padding: 1.25rem; */
-  }
-
   .hamburger {
     display: block;
     top: 4em;
-    left: -10em;
   }
 
   nav {
@@ -755,10 +736,6 @@ div.card {
 
   .hamburger {
     display: none;
-  }
-
-  nav {
-    background-color: antiquewhite;
   }
 
   ul.nav-list {

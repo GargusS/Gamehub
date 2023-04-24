@@ -666,12 +666,12 @@ div.card {
     /* width: 100%; */
     background-image: url('assets/img/Vector_mobile_bg_.png');
   }
-/* 
+
   header {
+    display: block;
     margin: 0 auto;
     width: 100%;
-    background-color: antiquewhite;
-  } */
+  }
 
   body header a {
     width: 100%;
@@ -738,15 +738,15 @@ div.card {
     display: flex;
     align-items: right;
     flex-wrap: wrap;
-    margin: 0px;
+    margin: 0 auto;
     padding: 0px;
     width: 850px;
   }
 
   header img.logo_big {
-    display: flex;
-    flex-wrap: wrap;
-    width: 300px;
+    /* display: flex;
+    flex-wrap: wrap; */
+    margin: 0 auto;
   }
 
   h1.homepage-headline {

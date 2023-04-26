@@ -290,6 +290,7 @@ fieldset {
   border-radius: 10px;
   border-color: #1a5585;
   border-width: 5px;
+  width: 80%;
 }
 
 legend {

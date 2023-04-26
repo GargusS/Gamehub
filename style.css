@@ -44,7 +44,6 @@ div.connect_btn {
   display: flex;
   align-items: center;
   position: relative;
-
   width: 6.875rem;
   height: 6.875rem;
 }
@@ -77,11 +76,20 @@ a.connect {
   text-decoration: none;
 }
 
+i.fas.fa-bars:before,
+#menu-checkbox {
+  display: none;
+}
+
+#menu-checkbox:checked ~ nav {
+  display: block;
+}
+
 a.connect:hover {
   color: var(--linkhover);
 }
 
-nav ul {
+ul {
   display: flex;
 }
 
@@ -264,7 +272,7 @@ ul.nav-list {
   outline: var(--construct);
 }
 
-nav ul.nav-list a,
+ul.nav-list a,
 button {
   color: var(--linktext);
   font-family: 'Hind', sans-serif;
@@ -323,12 +331,12 @@ ul.nav-list li {
   padding: 0.625rem;
 }
 
-nav ul a:hover,
+ul a:hover,
 button:hover {
   background-color: var(--pill_btn_hover);
 }
 
-nav ul a:active,
+ul a:active,
 button:active {
   color: #1a5585;
 }
@@ -359,11 +367,6 @@ footer {
   font-weight: 400;
   font-size: 1em;
   width: 16rem;
-}
-.hamburger {
-  display: none;
-  position: relative;
-  top: 20em;
 }
 
 div.card-container {
@@ -405,6 +408,25 @@ div.card {
   header {
     width: 100%;
     margin: 0 auto;
+  }
+
+  i.fas.fa-bars:before,
+  #menu-checkbox {
+    display: block;
+  }
+
+  nav,
+  #menu-checkbox {
+    display: none;
+    position: absolute;
+    background-color: #1a5585;
+    border-radius: 30px 0px 0px 30px;
+    top: 120px;
+    right: 0px;
+  }
+
+  #menu-checkbox:checked ~ nav {
+    display: block;
   }
 
   body header a {
@@ -482,18 +504,12 @@ div.card {
     display: none;
   }
 
-  .hamburger {
-    display: block;
-    top: 4em;
-    left: -1em;
-  }
-
-  nav {
+  ul {
     display: hidden;
   }
 
   .nav-list {
-    display: none;
+    display: block;
   }
 
   header img.logo_big a {
@@ -554,6 +570,26 @@ div.card {
     margin: 0 auto;
   }
 
+  i.fas.fa-bars:before,
+  #menu-checkbox {
+    display: block;
+  }
+
+  nav,
+  #menu-checkbox {
+    display: none;
+    position: absolute;
+    background-color: #1a5585;
+    border-radius: 30px 0px 0px 30px;
+    top: 120px;
+    right: 0px;
+    z-index: 1000;
+  }
+
+  #menu-checkbox:checked ~ nav {
+    display: block;
+  }
+
   div.content {
     max-width: 90%;
   }
@@ -570,7 +606,7 @@ div.card {
   }
 
   .mobile_connect {
-    display: block;    
+    display: block;
   }
 
   img.mobile_hex_header {
@@ -614,14 +650,9 @@ div.card {
   main.sell div.content aside {
     display: none;
   }
-  .hamburger {
-    display: block;
-    top: 4em;
-    left: -2em;
-  }
 
   .nav-list {
-    display: none;
+    display: block;
   }
 
   header img.logo_big {
@@ -678,6 +709,15 @@ div.card {
     margin: 0 auto;
   }
 
+  i.fas.fa-bars:before,
+  #menu-checkbox {
+    display: none;
+  }
+
+  #menu-checkbox:checked ~ nav {
+    display: block;
+  }
+
   div.connect_btn {
     display: none;
   }
@@ -727,10 +767,6 @@ div.card {
   }
 
   main.sell div.content aside {
-    display: none;
-  }
-
-  .hamburger {
     display: none;
   }
 

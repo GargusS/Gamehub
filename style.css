@@ -168,7 +168,7 @@ main.sell {
 }
 
 main.about {
-  width: 40em;
+  width: 80%;
   padding: 1.25rem;
   margin: 0 auto;
   font-size: 1.2rem;
@@ -187,7 +187,7 @@ main.about p {
 }
 
 main.contact {
-  width: 40em;
+  width: 80%;
   padding: 1.25rem;
   margin: 0 auto;
   font-size: 1.2rem;

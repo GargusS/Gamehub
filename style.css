@@ -380,7 +380,7 @@ footer {
   padding-top: 1.25rem;
 }
 
-.footer_adress,
+.footer_address,
 .footer_email {
   outline: var(--construct);
   margin-top: auto;

@@ -169,7 +169,7 @@ main.sell {
 
 main.about {
   width: 80%;
-  padding: 1.25rem;
+  /* padding: 1.25rem; */
   margin: 0 auto;
   font-size: 1.2rem;
   font-family: 'Hind', sans-serif;
@@ -214,17 +214,38 @@ p.cart-title {
   width: 200px;
 }
 
+.cart-price-container{
+  /* background-color: #4CAF50; */
+  padding: 30px;
+  margin: 0 auto;
+}
+
+.cart-item-price {
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+  border-radius: 30px;
+  color: #000;
+  width: 60px;
+  height: 60px;
+  padding: 2px;
+  font-weight: 700;
+  font-size: 2em;
+  margin-top: 10px;
+}
+
 p.cart-description {
   text-align: left;
   width: 80%;
-  margin: 0px auto;
+  margin: 0 auto;
   margin-bottom: 30px;
-  padding: 0;
+  padding: 10px 10px 10px 0px;
 }
 
 button.cart {
-  margin: 0px auto;
+  /* margin: 0px auto; */
   height: 30px;
+  margin-top: 20px;
 }
 
 .astralis {

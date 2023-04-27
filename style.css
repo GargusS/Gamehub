@@ -202,7 +202,7 @@ main.cart {
 .cart-content {
   display: flex;
   flex-wrap: wrap;
-  margin: 0 auto;
+  margin: 30px auto;
 }
 
 p.cart-title {
@@ -215,16 +215,16 @@ p.cart-title {
 }
 
 p.cart-description {
-  text-align: center;
-  height: 60px;
-  width: 300px;
+  text-align: left;
+  width: 80%;
   margin: 0px auto;
+  margin-bottom: 30px;
+  padding: 0;
 }
 
 button.cart {
-  margin: 30px auto;
-
-  height: 60px;
+  margin: 0px auto;
+  height: 30px;
 }
 
 .astralis {

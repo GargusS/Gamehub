@@ -200,7 +200,7 @@ main.cart {
 }
 
 main.cart div.row {
-  
+  {
     display: -ms-flexbox; /* IE10 */
     display: flex;
     -ms-flex-wrap: wrap; /* IE10 */
@@ -285,7 +285,7 @@ main.cart div.row {
       margin-bottom: 20px;
     }
   }
-
+}
 
 .cart-content {
   display: flex;

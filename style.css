@@ -427,6 +427,7 @@ fieldset {
   border-color: #1a5585;
   border-width: 5px;
   width: 80%;
+  margin: 0 auto;
 }
 
 legend {
@@ -720,10 +721,6 @@ div.card {
   body header a {
     width: 10em;
     margin: 0 auto;
-  }
-
-  main.sell form {
-    width: 100%;
   }
 
   main.sell input {

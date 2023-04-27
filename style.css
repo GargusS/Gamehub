@@ -539,17 +539,7 @@ div.card {
   width: 160px;
 }
 .modal-container button {
-  /* display: block; */
   margin: 0 auto;
-  /* color: #fff; */
-  /* width: 160px; */
-  /* height: 50px; */
-  /* line-height: 50px; */
-  /* background: #446CB3; */
-  /* font-size: 22px; */
-  /* border: 0; */
-  /* border-radius: 3px; */
-  /* box-shadow: 0 5px 5px -5px #333; */
   transition: background 1s ease-in;
 }
 .modal-container .modal-backdrop {

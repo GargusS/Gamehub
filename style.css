@@ -195,9 +195,36 @@ main.contact {
 }
 
 main.cart {
-  max-width: 81.25rem;
-  padding: 1.25rem;
   margin: 0 auto;
+  width: 80%;
+}
+
+.cart-content {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+p.cart-title {
+  font-weight: 700;
+  font-size: 2em;
+  text-align: center;
+  margin: 10px auto;
+  height: 60px;
+  width: 200px;
+}
+
+p.cart-description {
+  text-align: center;
+  height: 60px;
+  width: 300px;
+  margin: 0px auto;
+}
+
+button.cart {
+  margin: 30px auto;
+
+  height: 60px;
 }
 
 .astralis {
@@ -322,6 +349,7 @@ input {
 .contact input {
   margin-bottom: 1em;
   width: 100%;
+  height: 30px;
 }
 textarea {
   width: 100%;
@@ -396,8 +424,14 @@ div.card {
 
 .card-button {
   background-color: var(--pill_btn);
-  margin: 10px auto;
-  height: 60px;
+  margin: 30px auto;
+  height: 30px auto;
+}
+
+.card-link {
+  font-size: 1em;
+  text-decoration: none;
+  color: #fff;
 }
 
 /* Mobile Size */
@@ -440,7 +474,7 @@ div.card {
   }
 
   main.sell input {
-    height: 200px;
+    height: 30px;
     width: 100%;
   }
 

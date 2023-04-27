@@ -37,6 +37,7 @@ header {
 header img.logo_big {
   outline: var(--construct);
   width: 15.625rem;
+  z-index: 999;
 }
 
 div.connect_btn {
@@ -1052,6 +1053,7 @@ div.card {
     /* display: flex;
     flex-wrap: wrap; */
     margin: 0 auto;
+    z-index: 999;
   }
 
   h1.homepage-headline {

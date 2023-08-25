@@ -192,7 +192,7 @@ main.contact {
   padding: 1.25rem;
   margin: 0 auto;
   font-size: 1.2rem;
-  text-align: left;
+  text-align: center;
 }
 
 main.cart {
@@ -201,7 +201,6 @@ main.cart {
 }
 
 main.cart div.row {
-   {
     display: flex;
     flex-wrap: wrap;
     margin: 0 -16px;
@@ -271,7 +270,6 @@ main.cart div.row {
     float: right;
     color: grey;
   }
-}
 
 .cart-content {
   display: flex;

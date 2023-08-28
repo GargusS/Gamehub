@@ -608,10 +608,6 @@ div.card {
   color: #000;
 }
 
-.modal-content {
-  /* overflow: scroll; */
-}
-
 .modal-container
   .modal-toggle:checked
   ~ .modal-backdrop

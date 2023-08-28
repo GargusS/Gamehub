@@ -12,7 +12,9 @@ fetch(apiUrl)
   })
   .then((dataArray) => {
     //console.log(dataArray);
+    // Get the parent div where card is to be placed.
     let buy = document.getElementById("dataArray");
+    // Inject the HTML
     buy.innerHTML = dataArray
       .map(({ id, title, description, image, price }) => {
         return `<div class="card-container">

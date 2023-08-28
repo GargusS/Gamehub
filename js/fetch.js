@@ -1,12 +1,11 @@
-// fetch with error handling
+// fetch API into a variable
 const apiUrl = "https://api.noroff.dev/api/v1/gamehub";
-
+// Response from API with simple error handling
 fetch(apiUrl)
   .then((resp) => {
     //error checking
     //200-299 range
-    if (!resp.ok)
-      throw new Error("was not a valid response");
+    if (!resp.ok) throw new Error("404, this was not a valid response");
     return resp.json();
   })
   .then((dataArray) => {

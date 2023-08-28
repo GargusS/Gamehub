@@ -32,6 +32,7 @@ fetch(apiUrl)
               <p>${price}</p>
               <hr>
               <img class="card-img" src="${image}" alt="${description}">
+              <hr>
               <button class="card-button"><a class="card-link" href="../html/cart.html">Add To Cart</a></button>
             </div>
           </div>

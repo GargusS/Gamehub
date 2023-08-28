@@ -5,7 +5,7 @@ fetch(apiUrl)
   .then((resp) => {
     //error checking
     //200-299 range
-    if (!resp.ok) throw new Error("404, this was not a valid response");
+    if (!resp.ok) throw new Error("4-oh-4, Oops something went wrong here");
     return resp.json();
   })
   .then((dataArray) => {
@@ -44,5 +44,7 @@ fetch(apiUrl)
       .join("");
   })
   .catch((err) => {
-    console.warn(err.message);
+    let error = document.getElementById("browse");
+    error.innerText = err;
+    //console.warn(err.message);
   });

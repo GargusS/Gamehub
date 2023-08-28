@@ -3,11 +3,10 @@ const apiUrl = "https://api.noroff.dev/api/v1/gamehub";
 
 fetch(apiUrl)
   .then((resp) => {
-    //console.log(resp);
     //error checking
-    //200-299
+    //200-299 range
     if (!resp.ok)
-      throw new Error("was not a valid response, check the code in fetch.js");
+      throw new Error("was not a valid response");
     return resp.json();
   })
   .then((dataArray) => {

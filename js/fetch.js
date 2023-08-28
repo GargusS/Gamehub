@@ -12,13 +12,13 @@ fetch(apiUrl)
   })
   .then((dataArray) => {
     //console.log(dataArray);
-    let buy = document.getElementById('dataArray');
+    let buy = document.getElementById("dataArray");
     buy.innerHTML = dataArray
       .map(({ id, title, description, image, price }) => {
-        return  `<div class="card-container">
+        return `<div class="card-container">
       <div class="card" data-id="${id}">
         <h4>${title}</h4>
-        <img class="card-img" src="${image}" alt="Image of game cover">
+        <img class="card-img" src="${image}" alt="${description}">
         <div class="modal-container">
           <input class="modal-toggle" id="modal-exit1" type="checkbox">
           <button class="button">Read More</button>
@@ -31,6 +31,7 @@ fetch(apiUrl)
               <hr>
               <p>${price}</p>
               <hr>
+              <img class="card-img" src="${image}" alt="${description}">
               <button class="card-button"><a class="card-link" href="../html/cart.html">Add To Cart</a></button>
             </div>
           </div>

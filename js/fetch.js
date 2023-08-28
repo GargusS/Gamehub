@@ -20,16 +20,16 @@ fetch(apiUrl)
         <h4>${title}</h4>
         <img class="card-img" src="${image}" alt="${description}">
         <div class="modal-container">
-          <input class="modal-toggle" id="modal-exit1" type="checkbox">
+          <input class="modal-toggle" id="${id}" type="checkbox">
           <button class="button">Read More</button>
           <div class="modal-backdrop">
             <div class="modal-content">
-              <label class="modal-close" for="modal-exit1">X</label>
+              <label class="modal-close" for="${id}">X</label>
               <h2>${title}</h2>
               <hr />
               <p>${description}</p>
               <hr>
-              <p>${price}</p>
+              <p class="price">$ ${price}</p>
               <hr>
               <img class="card-img" src="${image}" alt="${description}">
               <hr>

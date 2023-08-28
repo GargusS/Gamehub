@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="../css/reset.css" />
   <link rel="stylesheet" href="../css/style.css" />
   <script src="https://kit.fontawesome.com/b318972c4d.js" crossorigin="anonymous"></script>
+  <script src="../js/fetch.js" defer></script>
   <title>Gamehub Listings</title>
 </head>
 
@@ -42,11 +43,11 @@
 
 
     <h1 class="browse">Browse Our Listed Games</h1>
-
-    <div class="card-container">
+    <div id="dataArray"></div>
+    <!-- <div class="card-container">
       <div class="card">
         <h4>Title of card</h4>
-        <img class="card-img" src="./assets/img/GameHub_covers.jpg" alt="Image of game cover">
+        <img class="card-img" src="../assets/img/GameHub_covers.jpg" alt="Image of game cover">
         <div class="modal-container">
           <input class="modal-toggle" id="modal-exit1" type="checkbox">
           <button class="button">Read More</button>
@@ -65,228 +66,7 @@
         </div>
         <button class="card-button"><a class="card-link" href="../html/cart.html">Add To Cart</a></button>
       </div>
-    </div>
-
-    <div class="card-container">
-      <div class="card">
-        <h4>Title of card</h4>
-        <img class="card-img" src="../assets/img/GameHub_covers.jpg" alt="Image of game cover">
-        <div class="modal-container">
-          <input class="modal-toggle" id="modal-exit2" type="checkbox">
-          <button class="button">Read More</button>
-          <div class="modal-backdrop">
-            <div class="modal-content">
-              <label class="modal-close" for="modal-exit2">X</label>
-              <h2>Modal title</h2>
-              <hr />
-              <p>Modal Content</p>
-            </div>
-          </div>
-        </div>
-        <button class="card-button"><a class="card-link" href="cart.html">Add To Cart</a></button>
-      </div>
-    </div>
-
-    <div class="card-container">
-      <div class="card">
-        <h4>Title of card</h4>
-        <img class="card-img" src="./assets/img/GameHub_covers.jpg" alt="Image of game cover">
-        <div class="modal-container">
-          <input class="modal-toggle" id="modal-exit3" type="checkbox">
-          <button class="button">Read More</button>
-          <div class="modal-backdrop">
-            <div class="modal-content">
-              <label class="modal-close" for="modal-exit3">X</label>
-              <h2>Modal title</h2>
-              <hr />
-              <p>Modal Content</p>
-            </div>
-          </div>
-        </div>
-        <button class="card-button"><a class="card-link" href="cart.html">Add To Cart</a></button>
-      </div>
-    </div>
-
-    <div class="card-container">
-      <div class="card">
-        <h4>Title of card</h4>
-        <img class="card-img" src="./assets/img/GameHub_covers.jpg" alt="Image of game cover">
-        <div class="modal-container">
-          <input class="modal-toggle" id="modal-exit4" type="checkbox">
-          <button class="button">Read More</button>
-          <div class="modal-backdrop">
-            <div class="modal-content">
-              <label class="modal-close" for="modal-exit4">X</label>
-              <h2>Modal title</h2>
-              <hr />
-              <p>Modal Content</p>
-            </div>
-          </div>
-        </div>
-        <button class="card-button"><a class="card-link" href="cart.html">Add To Cart</a></button>
-      </div>
-    </div>
-
-    <div class="card-container">
-      <div class="card">
-        <h4>Title of card</h4>
-        <img class="card-img" src="./assets/img/GameHub_covers.jpg" alt="Image of game cover">
-        <div class="modal-container">
-          <input class="modal-toggle" id="modal-exit5" type="checkbox">
-          <button class="button">Read More</button>
-          <div class="modal-backdrop">
-            <div class="modal-content">
-              <label class="modal-close" for="modal-exit5">X</label>
-              <h2>Modal title</h2>
-              <hr />
-              <p>Modal Content</p>
-            </div>
-          </div>
-        </div>
-        <button class="card-button"><a class="card-link" href="cart.html">Add To Cart</a></button>
-      </div>
-    </div>
-
-    <div class="card-container">
-      <div class="card">
-        <h4>Title of card</h4>
-        <img class="card-img" src="./assets/img/GameHub_covers.jpg" alt="Image of game cover">
-        <div class="modal-container">
-          <input class="modal-toggle" id="modal-exit6" type="checkbox">
-          <button class="button">Read More</button>
-          <div class="modal-backdrop">
-            <div class="modal-content">
-              <label class="modal-close" for="modal-exit6">X</label>
-              <h2>Modal title</h2>
-              <hr />
-              <p>Modal Content</p>
-            </div>
-          </div>
-        </div>
-        <button class="card-button"><a class="card-link" href="cart.html">Add To Cart</a></button>
-      </div>
-    </div>
-
-    <div class="card-container">
-      <div class="card">
-        <h4>Title of card</h4>
-        <img class="card-img" src="./assets/img/GameHub_covers.jpg" alt="Image of game cover">
-        <div class="modal-container">
-          <input class="modal-toggle" id="modal-exit7" type="checkbox">
-          <button class="button">Read More</button>
-          <div class="modal-backdrop">
-            <div class="modal-content">
-              <label class="modal-close" for="modal-exit7">X</label>
-              <h2>Modal title</h2>
-              <hr />
-              <p>Modal Content</p>
-            </div>
-          </div>
-        </div>
-        <button class="card-button"><a class="card-link" href="cart.html">Add To Cart</a></button>
-      </div>
-    </div>
-
-    <div class="card-container">
-      <div class="card">
-        <h4>Title of card</h4>
-        <img class="card-img" src="./assets/img/GameHub_covers.jpg" alt="Image of game cover">
-        <div class="modal-container">
-          <input class="modal-toggle" id="modal-exit8" type="checkbox">
-          <button class="button">Read More</button>
-          <div class="modal-backdrop">
-            <div class="modal-content">
-              <label class="modal-close" for="modal-exit8">X</label>
-              <h2>Modal title</h2>
-              <hr />
-              <p>Modal Content</p>
-            </div>
-          </div>
-        </div>
-        <button class="card-button"><a class="card-link" href="cart.html">Add To Cart</a></button>
-      </div>
-    </div>
-    <div class="card-container">
-      <div class="card">
-        <h4>Title of card</h4>
-        <img class="card-img" src="./assets/img/GameHub_covers.jpg" alt="Image of game cover">
-        <div class="modal-container">
-          <input class="modal-toggle" id="modal-exit9" type="checkbox">
-          <button class="button">Read More</button>
-          <div class="modal-backdrop">
-            <div class="modal-content">
-              <label class="modal-close" for="modal-exit9">X</label>
-              <h2>Modal title</h2>
-              <hr />
-              <p>Modal Content</p>
-            </div>
-          </div>
-        </div>
-        <button class="card-button"><a class="card-link" href="cart.html">Add To Cart</a></button>
-      </div>
-    </div>
-
-    <div class="card-container">
-      <div class="card">
-        <h4>Title of card</h4>
-        <img class="card-img" src="./assets/img/GameHub_covers.jpg" alt="Image of game cover">
-        <div class="modal-container">
-          <input class="modal-toggle" id="modal-exit10" type="checkbox">
-          <button class="button">Read More</button>
-          <div class="modal-backdrop">
-            <div class="modal-content">
-              <label class="modal-close" for="modal-exit10">X</label>
-              <h2>Modal title</h2>
-              <hr />
-              <p>Modal Content</p>
-            </div>
-          </div>
-        </div>
-        <button class="card-button"><a class="card-link" href="cart.html">Add To Cart</a></button>
-      </div>
-    </div>
-
-    <div class="card-container">
-      <div class="card">
-        <h4>Title of card</h4>
-        <img class="card-img" src="./assets/img/GameHub_covers.jpg" alt="Image of game cover">
-        <div class="modal-container">
-          <input class="modal-toggle" id="modal-exit11" type="checkbox">
-          <button class="button">Read More</button>
-          <div class="modal-backdrop">
-            <div class="modal-content">
-              <label class="modal-close" for="modal-exit11">X</label>
-              <h2>Modal title</h2>
-              <hr />
-              <p>Modal Content</p>
-            </div>
-          </div>
-        </div>
-        <button class="card-button"><a class="card-link" href="cart.html">Add To Cart</a></button>
-      </div>
-    </div>
-
-    <div class="card-container">
-      <div class="card">
-        <h4>Title of card</h4>
-        <img class="card-img" src="./assets/img/GameHub_covers.jpg" alt="Image of game cover">
-        <div class="modal-container">
-          <input class="modal-toggle" id="modal-exit12" type="checkbox">
-          <button class="button">Read More</button>
-          <div class="modal-backdrop">
-            <div class="modal-content">
-              <label class="modal-close" for="modal-exit12">X</label>
-              <h2>Modal title</h2>
-              <hr />
-              <p>Modal Content</p>
-            </div>
-          </div>
-        </div>
-        <button class="card-button"><a class="card-link" href="cart.html">Add To Cart</a></button>
-      </div>
-    </div>
-
-
+    </div> -->
 
   </main>
 

@@ -151,9 +151,15 @@ main.index {
 }
 
 main.buy {
-  display: block;
   margin: 0 auto;
   width: 75%;
+}
+
+main div.fetch_container {
+  display: flex;
+  flex-wrap: wrap;
+  /* place-self: center; */
+  /* justify-content: flex-start; */
 }
 
 h1.browse {
@@ -493,9 +499,9 @@ footer {
 }
 
 div.card-container {
-  float: left;
   display: flex;
   width: 15em;
+  margin: 1em 1em;
 }
 
 div.card {
@@ -584,14 +590,14 @@ div.card {
   opacity: 1;
 }
 .modal-container .modal-toggle:checked ~ .modal-backdrop .modal-content {
-  background-color: #fff;
+  background-color: #ffffff;
   max-width: 400px;
   width: 100%;
   padding: 30px 60px;
   position: absolute;
   left: calc(50% - 200px);
   top: 12%;
-  border-radius: 4px;
+  border-radius: 20px;
   z-index: 999;
   pointer-events: auto;
   cursor: auto;

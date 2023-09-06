@@ -1,3 +1,5 @@
+const loader = document.querySelector(".loader");
+
 async function fetchData() {
   try {
     const apiUrl = "https://api.noroff.dev/api/v1/gamehub";
@@ -38,7 +40,25 @@ async function fetchData() {
           </div>
         </div>`;
       })
-      .join("");
+      .join(""); // Select all images inside the fetchContainer
+    const imagesToLoad = buy.querySelectorAll("img");
+
+    // Count the number of images to load
+    let imagesLoaded = 0;
+    const totalImages = imagesToLoad.length;
+
+    // Add a load event listener to each image
+    imagesToLoad.forEach((img) => {
+      img.addEventListener("load", () => {
+        imagesLoaded++;
+
+        // Check if all images are loaded
+        if (imagesLoaded === totalImages) {
+          // All images are loaded, hide the loader
+          loader.className += " hidden";
+        }
+      });
+    });
   } catch (err) {
     let error = document.getElementById("browse");
     error.innerText = err;

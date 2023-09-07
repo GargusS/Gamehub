@@ -385,6 +385,22 @@ details:hover {
   background-color: #1a5585;
 }
 
+.detailpage{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.detail-img{
+  margin-top: 30px;
+  width: 300px;
+}
+
+.detail-description {
+  margin-top: 30px;
+  width: 300px;
+}
+
 main.sell div.content {
   outline: var(--construct);
   display: flex;

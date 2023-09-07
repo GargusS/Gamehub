@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="buy page of GameHub, buy and sell used computer games">
+  <meta name="description" content="Game details page">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="shortcut icon" href="../assets/img/blue_hex_small.png" type="image/x-icon">
@@ -13,9 +13,10 @@
     rel="stylesheet">
   <link rel="stylesheet" href="../css/reset.css" />
   <link rel="stylesheet" href="../css/style.css" />
+  link
   <script src="https://kit.fontawesome.com/b318972c4d.js" crossorigin="anonymous"></script>
-  <script src="../js/fetch.js" defer></script>
-  <title>Buy your next game here</title>
+  <script src="../js/details.js" defer></script>
+  <title>Game details page</title>
 </head>
 
 <body>
@@ -25,8 +26,7 @@
       <img class="hex_header" src="../assets/img/blue_hex_small.png" alt="blue hexagon button" />
       <a class="connect" href="../html/contact.html">Connect To The Hub</a>
     </div>
-
-    <input type="checkbox" class="hamburger" id="menu-checkbox" />
+    <input type="checkbox" id="menu-checkbox" />
     <label for="menu-checkbox"><i class="fas fa-bars"></i></label>
     <nav>
       <ul class="nav-list" role="list">
@@ -35,21 +35,11 @@
         <li><a href="../html/sell.html">Sell Games</a></li>
         <li><a href="../html/about.html">About</a></li>
         <li><a href="../html/contact.html">Contact</a></li>
-        <li><a href="../html/cart.html">View Cart</a></li>
+        <li><a href="../html/details.html">View details</a></li>
       </ul>
     </nav>
   </header>
-
-  <main class="buy">
-    <div class="loader">
-      <img src="../assets/img/loader.gif" alt="loading...">
-    </div>
-    <h1 class="browse" id="browse">Browse Our Listed Games</h1>
-
-    <div class="fetch_container" id="dataArray"></div>
-
-  </main>
-
+  <main class="detailpage" id="details"></main>
   <footer>
     <div class="footer_address">
       <div>

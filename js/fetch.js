@@ -40,7 +40,9 @@ async function fetchData() {
           </div>
         </div>`;
       })
-      .join(""); // Select all images inside the fetchContainer
+      .join("");
+
+    // Select all images inside the fetchContainer
     const imagesToLoad = buy.querySelectorAll("img");
 
     // Count the number of images to load

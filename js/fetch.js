@@ -10,7 +10,6 @@ async function fetchData() {
     }
 
     const dataArray = await resp.json();
-    console.log(dataArray);
     let buy = document.getElementById("dataArray");
     buy.innerHTML = dataArray
       .map(({ id, title, description, image, price }) => {

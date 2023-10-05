@@ -100,7 +100,6 @@ main {
   height: 1fr;
 }
 
-
 .loader {
   position: fixed;
   z-index: 1;
@@ -129,7 +128,6 @@ main {
     visibility: hidden;
   }
 }
-
 
 h1,
 h2,
@@ -177,8 +175,9 @@ h1.homepage-headline {
   line-height: var(--h1);
 }
 
-main.index {
-  padding: 1.25rem;
+img.mobile-rocket-img {
+  height: 100%;
+  width: 100%;
 }
 
 main.buy {
@@ -197,6 +196,11 @@ h1.browse {
   display: block;
   text-align: center;
   padding: 20px;
+}
+
+main.index .content {
+  padding: 1.25rem;
+  display: flex;
 }
 
 main.sell {
@@ -357,8 +361,9 @@ button.cart {
   margin-top: 20px;
 }
 
-.astralis {
+.sponsor {
   outline: var(--construct);
+  height: 500px;
 }
 
 section {
@@ -385,13 +390,13 @@ details:hover {
   background-color: #1a5585;
 }
 
-.detailpage{
+.detailpage {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.detail-img{
+.detail-img {
   margin-top: 30px;
   width: 300px;
 }
@@ -423,7 +428,7 @@ main.sell div.content aside {
   width: 30em;
 }
 
-div.slider-container {
+div.sponsor-container {
   outline: var(--construct);
   position: relative;
   top: -6.25rem;
@@ -581,135 +586,6 @@ div.card {
   color: #fff;
 }
 
-/* modal popup */
-
-.modal-container {
-  margin: 0 auto;
-  padding-top: 60px;
-  position: relative;
-  /* width: 160px; */
-}
-.modal-container button {
-  margin: 0 auto;
-  transition: background 1s ease-in;
-}
-.modal-container .modal-backdrop {
-  height: 0;
-  width: 0;
-  opacity: 0;
-  overflow: hidden;
-  transition: opacity 0.2s ease-in;
-}
-.modal-container .modal-toggle {
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  margin: 0;
-  opacity: 0;
-  cursor: pointer;
-}
-
-/* Open modal container */
-
-.modal-container .modal-toggle:hover ~ button {
-  background: var(--pill_btn_hover);
-}
-.modal-container .modal-toggle:checked {
-  width: 100vw;
-  height: 100vh;
-  position: fixed;
-  left: 0;
-  top: 0;
-  z-index: 9;
-  opacity: 0;
-}
-.modal-container .modal-toggle:checked ~ .modal-backdrop {
-  background-color: rgba(0, 0, 0, 0.6);
-  width: 100vw;
-  height: 100vh;
-  position: fixed;
-  left: 0;
-  top: 0;
-  z-index: 9;
-  pointer-events: none;
-  opacity: 1;
-}
-.modal-container .modal-toggle:checked ~ .modal-backdrop .modal-content {
-  background-color: #ffffff;
-  max-width: 400px;
-  width: 100%;
-  padding: 30px 60px;
-  position: absolute;
-  left: calc(50% - 200px);
-  top: 12%;
-  border-radius: 20px;
-  z-index: 999;
-  pointer-events: auto;
-  cursor: auto;
-  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.6);
-}
-@media (max-width: 400px) {
-  .modal-container .modal-toggle:checked ~ .modal-backdrop .modal-content {
-    left: 0;
-  }
-}
-
-.modal-title,
-.modal-content {
-  color: #000;
-}
-
-.modal-container
-  .modal-toggle:checked
-  ~ .modal-backdrop
-  .modal-content
-  .modal-close {
-  color: #666;
-  position: absolute;
-  right: 20px;
-  top: 0;
-  padding-top: 0px;
-  background: #fff;
-  font-size: 25px;
-  width: 25px;
-  height: 28px;
-  font-weight: bold;
-  text-align: center;
-  cursor: pointer;
-}
-.modal-container
-  .modal-toggle:checked
-  ~ .modal-backdrop
-  .modal-content
-  .modal-close.button {
-  top: initial;
-  bottom: 20px;
-  right: 20px;
-  background: #4caf50;
-  color: #fff;
-  width: 50px;
-  border-radius: 2px;
-  font-size: 14px;
-  font-weight: normal;
-}
-.modal-container
-  .modal-toggle:checked
-  ~ .modal-backdrop
-  .modal-content
-  .modal-close.button:hover {
-  color: #000;
-  background: #1a5585;
-}
-.modal-container
-  .modal-toggle:checked
-  ~ .modal-backdrop
-  .modal-content
-  .modal-close:hover {
-  color: #333;
-}
-
 .price {
   font-size: 28px;
   font-weight: 700;
@@ -749,6 +625,11 @@ div.card {
     margin: 0 auto;
   }
 
+  main.index .content {
+    display: block;
+    width: 90%;
+  }
+
   main.sell input {
     height: 30px;
     width: 100%;
@@ -769,11 +650,8 @@ div.card {
     display: block;
   }
 
-  img.mobile_hex_header {
-    display: block;
-    position: relative;
-    top: -5em;
-    left: 6em;
+  img.mobile-rocket-img {
+    margin-top: 50px;
   }
 
   a.mobile_connect {
@@ -831,27 +709,27 @@ div.card {
     line-height: 1em;
   }
 
-  .slider-container {
+  .sponsor-container {
     display: block;
     /* zoom: 40%; */
     margin: 0 auto;
   }
 
-  img.slider {
+  img.sponsor {
     display: block;
     position: relative;
     left: -6em;
     top: 5em;
   }
 
-  div.slider-container {
+  div.sponsor-container {
     display: block;
     width: 200px;
     margin: 0 auto;
     padding: 0;
   }
 
-  img.astralis {
+  img.sponsor {
     padding: 36em 0 2em 0;
     margin: 0 auto;
   }
@@ -918,12 +796,6 @@ div.card {
     display: block;
   }
 
-  img.mobile_hex_header {
-    display: block;
-    position: relative;
-    left: 6em;
-  }
-
   a.mobile_connect {
     z-index: 999;
     position: relative;
@@ -973,25 +845,25 @@ div.card {
     margin-left: 0;
   }
 
-  .slider-container {
+  .sponsor-container {
     display: block;
     left: 0px;
     /* margin: 0 auto; */
   }
 
-  img.slider {
+  img.sponsor {
     display: block;
     width: 300px;
     position: relative;
     top: 10em;
   }
 
-  div.slider-container {
+  div.sponsor-container {
     margin: 0;
     padding: 0;
   }
 
-  img.astralis {
+  img.sponsor {
     padding: 36em 0;
     margin: 0 auto;
   }
@@ -1043,12 +915,6 @@ div.card {
     display: block;
   }
 
-  img.mobile_hex_header {
-    display: block;
-    position: relative;
-    left: 6em;
-  }
-
   a.mobile_connect {
     z-index: 999;
     position: relative;
@@ -1068,6 +934,7 @@ div.card {
   }
 
   main.index {
+    max-width: 50%;
     margin: 0 auto;
     padding: 0;
   }
@@ -1103,23 +970,23 @@ div.card {
     font-size: 4em;
   }
 
-  .slider-container {
+  .sponsor-container {
     display: flex;
     margin: 0 auto;
   }
 
-  img.slider {
+  img.sponsor {
     display: flex;
     position: relative;
     left: -19em;
   }
 
-  div.slider-container {
+  div.sponsor-container {
     margin: 0;
     padding: 0;
   }
 
-  img.astralis {
+  img.sponsor {
     padding: 36em 0;
     margin: 0 auto;
   }

@@ -494,9 +494,6 @@ label {
   margin-top: 1em;
 }
 
-label.contact {
-}
-
 textarea {
   font-family: "Hind", sans-serif;
   width: 100%;
@@ -926,7 +923,7 @@ div.card {
     display: none;
   }
 
-  div.content{
+  div.content {
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
@@ -1015,7 +1012,6 @@ div.card {
     display: flex;
     margin: 0 auto;
   }
-
 
   footer {
     display: flex;

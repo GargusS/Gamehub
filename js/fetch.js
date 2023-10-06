@@ -12,7 +12,7 @@ async function fetchData() {
     const dataArray = await resp.json();
     let buy = document.getElementById("dataArray");
     buy.innerHTML = dataArray
-      .map(({ id, title, description, image, price }) => {
+      .map(({ id, title, description, image }) => {
         return `<div class="card-container">
           <div class="card" data-id="${id}">
             <h4>${title}</h4>

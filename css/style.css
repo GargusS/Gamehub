@@ -77,6 +77,15 @@ a.connect {
   text-decoration: none;
 }
 
+a.grade {
+  display: none;
+}
+
+.grade {
+  text-align: center;
+  width: 300px;
+}
+
 i.fas.fa-bars:before,
 #menu-checkbox {
   display: none;
@@ -188,8 +197,8 @@ main.buy {
 main div.fetch_container {
   display: flex;
   flex-wrap: wrap;
-  /* place-self: center; */
-  /* justify-content: flex-start; */
+  place-items: center;
+  justify-content: center;
 }
 
 h1.browse {
@@ -229,7 +238,7 @@ main.about p {
 }
 
 main.contact {
-  width: 80%;
+  width: 50%;
   padding: 1.25rem;
   margin: 0 auto;
   font-size: 1.2rem;
@@ -272,12 +281,13 @@ main.cart div.row {
   border-radius: 3px;
 }
 
-input[type="text"] {
+input {
   width: 100%;
+  font-family: "Hind", sans-serif;
   margin-bottom: 20px;
   padding: 12px;
   border: 1px solid #ccc;
-  border-radius: 3px;
+  border-radius: 10px;
 }
 
 label {
@@ -468,15 +478,11 @@ fieldset {
   border-radius: 10px;
   border-color: #1a5585;
   border-width: 5px;
-  width: 80%;
+  min-width: 50%;
   margin: 0 auto;
 }
 
 legend {
-  text-align: center;
-}
-
-legend.contact {
   text-align: center;
   padding: 0 1em;
 }
@@ -488,24 +494,13 @@ label {
 }
 
 label.contact {
-  display: block;
-  text-align: center;
-  margin-top: 1em;
 }
 
-input {
-  margin-bottom: 1em;
-  width: 100%;
-}
-
-.contact input {
-  margin-bottom: 1em;
-  width: 100%;
-  height: 30px;
-}
 textarea {
+  font-family: "Hind", sans-serif;
   width: 100%;
-  height: 150px;
+  height: 100px;
+  border-radius: 10px;
 }
 
 ul.nav-list li {
@@ -631,7 +626,7 @@ div.card {
   }
 
   main.sell input {
-    height: 30px;
+    height: 20px;
     width: 100%;
   }
 
@@ -676,6 +671,19 @@ div.card {
     padding: 0;
     width: auto;
     height: auto;
+  }
+
+  a.grade {
+    display: block;
+    font-family: "Hind", sans-serif;
+    font-weight: 700;
+    font-size: 1.1em;
+    color: var(--linktext);
+    text-decoration: none;
+  }
+
+  .grade {
+    text-align: center;
   }
 
   main.index {
@@ -820,6 +828,19 @@ div.card {
     height: auto;
   }
 
+  a.grade {
+    display: block;
+    font-family: "Hind", sans-serif;
+    font-weight: 700;
+    font-size: 1.1em;
+    color: var(--linktext);
+    text-decoration: none;
+  }
+
+  .grade {
+    text-align: center;
+  }
+
   main.index {
     margin: 0 auto;
     padding: 0;
@@ -931,6 +952,19 @@ div.card {
 
   a.imagehex {
     display: none;
+  }
+
+  a.grade {
+    display: block;
+    font-family: "Hind", sans-serif;
+    font-weight: 700;
+    font-size: 1.1em;
+    color: var(--linktext);
+    text-decoration: none;
+  }
+
+  .grade {
+    text-align: center;
   }
 
   main.index {

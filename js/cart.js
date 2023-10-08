@@ -68,7 +68,6 @@ function loadAndDisplayCart() {
   }
 }
 
-
 // Function to update and display the cart total
 function updateCartTotal() {
   // Calculate the cart total
@@ -124,7 +123,6 @@ function removeFromCart(index) {
   }
 }
 
-
 // Call the function to load and display cart data when the page loads
 loadAndDisplayCart();
 
@@ -155,9 +153,22 @@ function calculateCartTotal() {
 const cartTotalElement = document.getElementById("cartTotal");
 cartTotalElement.textContent = `Total: $${calculateCartTotal()}`;
 
-
 function getTotalItemCount() {
   // Get cart data from local storage
   const itemCount = localStorage.getItem("gameData");
-  console.log(itemCount); 
+  console.log(itemCount);
+}
+
+function checkout() {
+  // Display the "Thank you" message
+  alert("Thank you, your order have been sent.");
+
+  // Clear the localStorage
+  localStorage.clear();
+
+  // Redirect to index.html
+  window.location.href = "../index.html";
+
+  // Prevent the form from actually submitting (if it's a form submission)
+  return false;
 }

@@ -80,12 +80,12 @@
 
       <form>
         <label class="contact" for="title">Name:</label>
-        <input id="title" type="text" name="title" />
+        <input id="title" type="text" name="title" required/>
         <label class="contact" for="message">Your message:</label>
-        <textarea id="message" class="contact" name="message"></textarea>
+        <textarea id="message" class="contact" name="message" required></textarea>
 
         <label class="contact" for="email">Your Email:</label>
-        <input id="email" type="text" name="email" />
+        <input pattern="[a-åA-Å0-9._+-]+@[a-åA-Å0-9 -]+\.[a-z]+\.[a-z]{2,}" id="email" type="email" name="email" required/>
         <br>
         <button>Submit message</button>
       </form>

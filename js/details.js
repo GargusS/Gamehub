@@ -25,10 +25,64 @@ async function fetchDetails() {
           <h2>$ ${info.price}</h2>
           <img class="detail-img" src="${info.image}" alt="A picture of the game ${info.title}">
           <h2 class="detail-description">${info.description}</h2>
-          <button class="card-button"><a class="card-link" href="../html/cart.html">Add To Cart</a></button>
+          <button class="card-button" id="setItem">Add to Cart</button>
           </div>
           </div>`;
-          
+
+          document.title = `${info.title}`
+
+      function handleButtonClick() {
+        // Get the game data that you want to add to the cart
+        const gameData = info; // Replace this with the actual game data
+
+        // Retrieve the current game data from localStorage
+        const gameDataString = localStorage.getItem("gameData");
+
+        // Initialize gameDataArray as an empty array if it doesn't exist or is not an array
+        let gameDataArray = [];
+        if (gameDataString) {
+          try {
+            // Try to parse the existing data as an array
+            gameDataArray = JSON.parse(gameDataString);
+            if (!Array.isArray(gameDataArray)) {
+              // If it's not an array, initialize it as an empty array
+              gameDataArray = [];
+            }
+          } catch (error) {
+            // If parsing fails, initialize it as an empty array
+            gameDataArray = [];
+          }
+        }
+
+        // Check if the game with the same id already exists in the cart
+        const existingGame = gameDataArray.find(
+          (item) => item.id === gameData.id
+        );
+
+        if (existingGame) {
+          // If the game already exists, increase its quantity
+          existingGame.quantity += 1;
+        } else {
+          // If the game doesn't exist, initialize the quantity to 1 and add it to the cart
+          gameData.quantity = 1;
+          gameDataArray.push(gameData);
+        }
+
+        // Update the game data in localStorage
+        localStorage.setItem("gameData", JSON.stringify(gameDataArray));
+
+        // Alert the user that the game has been added to the cart
+        alert("Game has been added to your cart.");
+
+        // Call updateCartTotal to refresh the cart total
+        updateCartTotal();
+      }
+
+      // Get the button element by its ID
+      const saveButton = document.getElementById("setItem");
+
+      // Add a click event listener to the button
+      saveButton.addEventListener("click", handleButtonClick);
     }
 
     // Select all images inside the fetchContainer
@@ -57,13 +111,7 @@ async function fetchDetails() {
 
     createHtml(info);
   } catch (err) {
-    
     let error = document.getElementById("details");
     error.innerHTML = err;
   }
-  
-  
-
-  
 }
-

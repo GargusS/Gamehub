@@ -11,7 +11,7 @@
 }
 
 html body {
-  /* overflow-x: hidden; */
+  background-image: url("../assets/img/Vector_mobile_bg_.png");
   display: grid;
   grid-template-areas:
     "header header  header"
@@ -246,35 +246,6 @@ main.contact {
   text-align: center;
 }
 
-main.cart {
-  margin: 0 auto;
-  width: 80%;
-}
-
-main.cart div.row {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0 -16px;
-}
-
-.col-25 {
-  flex: 25%;
-}
-
-.col-50 {
-  flex: 50%;
-}
-
-.col-75 {
-  flex: 75%;
-}
-
-.col-25,
-.col-50,
-.col-75 {
-  padding: 0 16px;
-}
-
 .container {
   background-color: #f2f2f2;
   padding: 5px 20px 15px 20px;
@@ -323,53 +294,36 @@ span.price {
   color: grey;
 }
 
-.cart-content {
+main.cart {
   display: flex;
-  flex-wrap: wrap;
-  margin: 30px auto;
-}
-
-p.cart-title {
-  font-weight: 700;
-  font-size: 2em;
-  text-align: center;
-  margin: 10px auto;
-  height: 60px;
-  width: 200px;
-}
-
-.cart-price-container {
-  /* background-color: #4CAF50; */
-  padding: 30px;
   margin: 0 auto;
 }
 
-.cart-item-price {
+/* CSS for cart items */
+.cart-item {
   display: flex;
-  justify-content: center;
-  background-color: #fff;
-  border-radius: 30px;
-  color: #000;
-  width: 60px;
-  height: 60px;
-  padding: 2px;
+  margin-bottom: 50px;
+  padding: 10px;
+}
+
+/* CSS for image */
+.cart-item img {
+  max-width: 100px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.cart-item button {
+  max-width: 100px;
+  height: auto;
+  margin-right: 20px;
+}
+
+.cartTotal {
+  display: flex;
+  align-items: end;
   font-weight: 700;
-  font-size: 2em;
-  margin-top: 10px;
-}
-
-p.cart-description {
-  text-align: left;
-  width: 80%;
-  margin: 0 auto;
-  margin-bottom: 30px;
-  padding: 10px 10px 10px 0px;
-}
-
-button.cart {
-  /* margin: 0px auto; */
-  height: 30px;
-  margin-top: 20px;
+  font-size: larger;
 }
 
 .sponsor {
@@ -508,6 +462,7 @@ ul.nav-list li {
 ul a:hover,
 button:hover {
   background-color: var(--pill_btn_hover);
+  cursor: pointer;
 }
 
 ul a:active,
@@ -585,10 +540,6 @@ div.card {
 }
 /* Mobile Size */
 @media only screen and (min-width: 0px) and (max-width: 624px) {
-  body {
-    background-image: url("assets/img/Vector_mobile_bg_.png");
-  }
-
   header {
     width: 100%;
     margin: 0 auto;
@@ -749,8 +700,6 @@ div.card {
 @media only screen and (min-width: 625px) and (max-width: 889px) {
   body {
     width: 80%auto;
-    /* margin: 0 auto; */
-    background-image: url("assets/img/Vector_mobile_bg_.png");
   }
 
   header {
@@ -894,11 +843,6 @@ div.card {
 
 /* small Desktop size */
 @media only screen and (min-width: 890px) and (max-width: 1620px) {
-  body {
-    /* width: 100%; */
-    background-image: url("assets/img/Vector_mobile_bg_.png");
-  }
-
   header {
     display: block;
     margin: 0 auto;

@@ -68,8 +68,6 @@ function loadAndDisplayCart() {
   }
 }
 
-
-
 // Function to update and display the cart total
 function updateCartTotal() {
   // Calculate the cart total
@@ -79,8 +77,6 @@ function updateCartTotal() {
   const cartTotalElement = document.getElementById("cartTotal");
   cartTotalElement.textContent = `Total: $${total}`;
 }
-
-
 
 // Function to increase quantity
 function increaseQuantity(index) {
@@ -150,7 +146,7 @@ function calculateCartTotal() {
 
     // Return the calculated total
     return total.toFixed(2); // Format total with 2 decimal places
-  }else{
+  } else {
     // If no cart data exists, return a default total
     return "0.00";
   }
@@ -160,17 +156,16 @@ function calculateCartTotal() {
 const cartTotalElement = document.getElementById("cartTotal");
 cartTotalElement.textContent = `Total: $${calculateCartTotal()}`;
 
-
 function checkout() {
   // Display the "Thank you" message
   alert("Thank you, your order have been sent.");
-  
+
   // Clear the localStorage
   localStorage.clear();
-  
+
   // Redirect to index.html
   window.location.href = "../index.html";
-  
+
   // Prevent the cart from submitting ( redirect to index.html instead )
   return false;
 }

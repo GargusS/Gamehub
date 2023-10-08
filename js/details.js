@@ -29,11 +29,11 @@ async function fetchDetails() {
           </div>
           </div>`;
 
-          document.title = `${info.title}`
+      document.title = `${info.title}`;
 
       function handleButtonClick() {
-        // Get the game data that you want to add to the cart
-        const gameData = info; // Replace this with the actual game data
+        // Get the game data that is to be added to the cart
+        const gameData = info;
 
         // Retrieve the current game data from localStorage
         const gameDataString = localStorage.getItem("gameData");

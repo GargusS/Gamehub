@@ -3,7 +3,7 @@ function loadAndDisplayCart() {
   // Get the container element for the cart
   const cartContainer = document.getElementById("cartContainer");
 
-  // Retrieve the 'gameData' key from local storage
+  // Retrieve the "gameData" key from local storage
   const gameDataString = localStorage.getItem("gameData");
 
   if (gameDataString) {
@@ -147,9 +147,6 @@ function calculateCartTotal() {
     // Return the calculated total
     return total.toFixed(2); // Format total with 2 decimal places
   }
-
-  // If there's no cart data, return 0 as the default total
-  return "0.00";
 }
 
 // Call the function to calculate the cart total and display it on page

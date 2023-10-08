@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="../css/reset.css" />
   <link rel="stylesheet" href="../css/style.css" />
   <script src="https://kit.fontawesome.com/b318972c4d.js" crossorigin="anonymous"></script>
+  <script src="../js/contact.js" defer></script>
   <!-- Hotjar Tracking Code for https://gamehub-unicornpoop.netlify.app/ -->
   <script>
     (function (h, o, t, j, a, r) {
@@ -78,18 +79,17 @@
         choosing GameHub!
       </p>
 
-      <form>
+      <form name="contact" onsubmit="required()">
         <label class="contact" for="title">Name:</label>
         <input id="title" type="text" name="title" required />
         <label class="contact" for="message">Your message:</label>
         <textarea id="message" class="contact" name="message" required></textarea>
 
         <label class="contact" for="email">Your Email:</label>
-        <input pattern="[a-åA-Å0-9._+-]+@[a-åA-Å0-9 -]+\.[a-z]+\.[a-z]{2,}" id="email" type="email" name="email"
-          required />
+        <input id="email" type="email" name="email" required />
         <br>
         <button>Submit message</button>
-      </form>
+        </form>
     </div>
   </main>
 

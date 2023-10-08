@@ -22,6 +22,7 @@ function loadAndDisplayCart() {
       // Create an image element
       const imgElement = document.createElement("img");
       imgElement.src = gameData.image;
+      imgElement.title = gameData.title;
       cartItemDiv.appendChild(imgElement);
 
       // Create a div for item details
@@ -70,12 +71,12 @@ function loadAndDisplayCart() {
 // Function to increase quantity
 function increaseQuantity(index) {
   // Retrieve cart data from localStorage
-  const gameDataString = localStorage.getItem('gameData');
+  const gameDataString = localStorage.getItem("gameData");
   if (gameDataString) {
     const cartData = JSON.parse(gameDataString);
     if (cartData[index]) {
       cartData[index].quantity += 1;
-      localStorage.setItem('gameData', JSON.stringify(cartData));
+      localStorage.setItem("gameData", JSON.stringify(cartData));
       loadAndDisplayCart(); // Refresh cart display
       updateCartTotal(); // Update cart total
     }
@@ -85,12 +86,12 @@ function increaseQuantity(index) {
 // Function to decrease quantity
 function decreaseQuantity(index) {
   // Retrieve cart data from localStorage
-  const gameDataString = localStorage.getItem('gameData');
+  const gameDataString = localStorage.getItem("gameData");
   if (gameDataString) {
     const cartData = JSON.parse(gameDataString);
     if (cartData[index] && cartData[index].quantity > 1) {
       cartData[index].quantity -= 1;
-      localStorage.setItem('gameData', JSON.stringify(cartData));
+      localStorage.setItem("gameData", JSON.stringify(cartData));
       loadAndDisplayCart(); // Refresh cart display
       updateCartTotal(); // Update cart total
     }
@@ -100,18 +101,17 @@ function decreaseQuantity(index) {
 // Function to remove item from cart
 function removeFromCart(index) {
   // Retrieve cart data from localStorage
-  const gameDataString = localStorage.getItem('gameData');
+  const gameDataString = localStorage.getItem("gameData");
   if (gameDataString) {
     const cartData = JSON.parse(gameDataString);
     if (cartData[index]) {
       cartData.splice(index, 1); // Remove the item
-      localStorage.setItem('gameData', JSON.stringify(cartData));
+      localStorage.setItem("gameData", JSON.stringify(cartData));
       loadAndDisplayCart(); // Refresh cart display
       updateCartTotal(); // Update cart total
     }
   }
 }
-
 
 // Function to update and display the cart total
 function updateCartTotal() {
@@ -119,11 +119,9 @@ function updateCartTotal() {
   const total = calculateCartTotal();
 
   // Display the cart total in your HTML
-  const cartTotalElement = document.getElementById('cartTotal');
+  const cartTotalElement = document.getElementById("cartTotal");
   cartTotalElement.textContent = `Total: $${total}`;
 }
-
-
 
 // Call the function to load and display cart data when the page loads
 loadAndDisplayCart();

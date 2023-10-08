@@ -302,13 +302,14 @@ main.cart {
 /* CSS for cart items */
 .cart-item {
   display: flex;
+  flex-wrap:wrap;
   margin-bottom: 50px;
   padding: 10px;
 }
 
 /* CSS for image */
 .cart-item img {
-  max-width: 100px;
+  max-width: 150px;
   height: auto;
   margin-right: 10px;
 }

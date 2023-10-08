@@ -68,6 +68,17 @@ function loadAndDisplayCart() {
   }
 }
 
+
+// Function to update and display the cart total
+function updateCartTotal() {
+  // Calculate the cart total
+  const total = calculateCartTotal();
+
+  // Display the cart total in your HTML
+  const cartTotalElement = document.getElementById("cartTotal");
+  cartTotalElement.textContent = `Total: $${total}`;
+}
+
 // Function to increase quantity
 function increaseQuantity(index) {
   // Retrieve cart data from localStorage
@@ -113,15 +124,6 @@ function removeFromCart(index) {
   }
 }
 
-// Function to update and display the cart total
-function updateCartTotal() {
-  // Calculate the cart total
-  const total = calculateCartTotal();
-
-  // Display the cart total in your HTML
-  const cartTotalElement = document.getElementById("cartTotal");
-  cartTotalElement.textContent = `Total: $${total}`;
-}
 
 // Call the function to load and display cart data when the page loads
 loadAndDisplayCart();
@@ -152,3 +154,10 @@ function calculateCartTotal() {
 // Call the function to calculate the cart total and display it on page
 const cartTotalElement = document.getElementById("cartTotal");
 cartTotalElement.textContent = `Total: $${calculateCartTotal()}`;
+
+
+function getTotalItemCount() {
+  // Get cart data from local storage
+  const itemCount = localStorage.getItem("gameData");
+  console.log(itemCount); 
+}

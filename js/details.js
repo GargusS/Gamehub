@@ -72,10 +72,7 @@ async function fetchDetails() {
         localStorage.setItem("gameData", JSON.stringify(gameDataArray));
 
         // Alert the user that the game has been added to the cart
-        alert("Game has been added to your cart.");
-
-        // Call updateCartTotal to refresh the cart total
-        updateCartTotal();
+        alert("Game have been added to your cart.");
       }
 
       // Get the button element by its ID

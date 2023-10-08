@@ -149,6 +149,7 @@
       </aside>
       <form>
         <fieldset>
+          <form action="upload.php" method="post" enctype="multipart/form-data"></form>
           <legend>
             <h1>Register Your Game</h1>
           </legend>
@@ -162,12 +163,14 @@
 
           <label for="description">Game Description:</label>
           <textarea id="description" name="description"></textarea>
+          <label for="fileToUpload">Game Image:</label>
+          <input type="file" name="fileToUpload" id="fileToUpload">
           <label for="email">Your Email:</label>
           <input id="email" type="text" name="email" />
-          <br>
-          <button>Submit Listing</button>
+          <input type="submit" value="Submit game" name="submit">
         </fieldset>
       </form>
+
     </div>
   </main>
 

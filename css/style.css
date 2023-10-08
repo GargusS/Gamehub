@@ -639,7 +639,7 @@ div.card {
     font-weight: 700;
     font-size: 1.1em;
     color: var(--linktext);
-    text-decoration: none;
+    /* text-decoration: none; */
   }
 
   .grade {
@@ -792,7 +792,7 @@ div.card {
     font-weight: 700;
     font-size: 1.1em;
     color: var(--linktext);
-    text-decoration: none;
+    /* text-decoration: none; */
   }
 
   .grade {
@@ -919,7 +919,7 @@ div.card {
     font-weight: 700;
     font-size: 1.1em;
     color: var(--linktext);
-    text-decoration: none;
+    /* text-decoration: none; */
   }
 
   .grade {

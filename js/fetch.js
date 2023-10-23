@@ -2,7 +2,7 @@ const loader = document.querySelector(".loader");
 
 async function fetchData() {
   try {
-    const apiUrl = "https://api.noroff.dev/api/v1/gamehub";
+    const apiUrl = "https://cms.sonnesyn.no/wp-json/wc/store/products";
     const resp = await fetch(apiUrl);
 
     if (!resp.ok) {
@@ -10,14 +10,15 @@ async function fetchData() {
     }
 
     const dataArray = await resp.json();
+    
     let buy = document.getElementById("dataArray");
     buy.innerHTML = dataArray
-      .map(({ id, title, description, image }) => {
+      .map(({ id, name, description, images }) => {
         return `<div class="card-container">
           <div class="card" data-id="${id}">
-            <h4>${title}</h4>
+            <h4>${name}</h4>
             
-            <img class="card-img" src="${image}" alt="${description}">
+            <img class="card-img" src="${images[0].src}" alt="${description}">
             
             <button class="card-button"><a class="card-link" href="../html/details.html?id=${id}">View details</a></button>
           </div>

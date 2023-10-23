@@ -8,7 +8,7 @@ const params = new URLSearchParams(queryString);
 
 const id = params.get("id");
 
-const url = "https://api.noroff.dev/api/v1/gamehub/" + id;
+const url = "https://cms.sonnesyn.no/wp-json/wc/store/products/" + id;
 
 fetchDetails();
 
@@ -16,20 +16,20 @@ async function fetchDetails() {
   try {
     const response = await fetch(url);
     const info = await response.json();
-
     function createHtml(info) {
       gameInfo.innerHTML = `
-          <div class="details" data-id="${info.id}">
-          <button class="card-button"><a class="card-link" href="../html/buy.html">Back To Games</a></button>
-          <h1>${info.title}</h1>
-          <h2>$ ${info.price}</h2>
-          <img class="detail-img" src="${info.image}" alt="A picture of the game ${info.title}">
+      <div class="details" data-id="${info.id}">
+      <button class="card-button"><a class="card-link" href="../html/buy.html">Back To Games</a></button>
+      
+          <h1>${info.name}</h1>
+          <h2>$ ${info.prices.price / 100}</h2>
+          <img class="detail-img" src="${info.images[0].src}" alt="A picture of ${info.name}">
           <h2 class="detail-description">${info.description}</h2>
           <button class="card-button" id="setItem">Add to Cart</button>
           </div>
           </div>`;
 
-      document.title = `${info.title}`;
+      document.title = `${info.name}`;
 
       function handleButtonClick() {
         // Get the game data that is to be added to the cart

@@ -20,7 +20,7 @@ async function fetchData() {
             
             <img class="card-img" src="${images[0].src}" alt="${description}">
             
-            <button class="card-button"><a class="card-link" href="../html/details.html?id=${id}">View details</a></button>
+            <button class="card-button"><a class="card-link" href="../html/details.html?id="${id}">View details</a></button>
           </div>
         </div>`;
       })

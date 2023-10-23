@@ -19,7 +19,7 @@ async function fetchData() {
             <h4>${name}</h4>
             
             <img class="card-img" src="${images[0].src}" alt="Image of ${name}">
-            
+            <p>${description}</p>
             <button class="card-button"><a class="card-link" href="../html/details.html?id="${id}">View details</a></button>
           </div>
         </div>`;

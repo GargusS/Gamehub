@@ -22,10 +22,9 @@ async function fetchDetails() {
       <button class="card-button"><a class="card-link" href="../html/buy.html">Back To Games</a></button>
       
           <h1>${info.name}</h1>
-          <h2>$ ${info.price}</h2>
-          <img class="detail-img" src="${
-            info.images[0].src
-          }" alt="A picture of ${info.name}">
+          <h2>$ ${info.prices}</h2>
+          <img class="detail-img" src="${info.images[0].src}" 
+          alt="A picture of ${info.name}">
           <h2 class="detail-description">${info.description}</h2>
           <button class="card-button" id="setItem">Add to Cart</button>
           </div>

@@ -2,30 +2,32 @@ const loader = document.querySelector(".loader");
 
 async function fetchData() {
   try {
-    const apiUrl = "https://cms.sonnesyn.no/wp-json/wc/store/products";
+    const apiUrl = "https://cms.sonnesyn.no/wp-json/wc/store/products/";
     const resp = await fetch(apiUrl);
 
     if (!resp.ok) {
       throw new Error("4-oh-4, Oops something went wrong here");
     }
-
+    
     const dataArray = await resp.json();
     
     let buy = document.getElementById("dataArray");
     buy.innerHTML = dataArray
-      .map(({ id, name, description, images }) => {
-        return `<div class="card-container">
-          <div class="card" data-id="${id}">
-            <h4>${name}</h4>
-            
-            <img class="card-img" src="${images[0].src}" alt="Image of ${name}">
-            <p>${description}</p>
-            <button class="card-button"><a class="card-link" href="../html/details.html?id="${id}">View details</a></button>
-          </div>
-        </div>`;
+    .map(({ id, name, description, images }) => {
+      console.log(id);
+      return `<div class="card-container">
+              <div class="card" data-id="${id}">
+              <h4>${name}</h4>
+      
+              <img class="card-img" src="${images[0].src}" alt="Image of ${name}">
+              <p>${description}</p>
+              <button class="card-button"><a class="card-link" href="../html/details.html?id=${id}">View details</a></button>
+      
+              </div>
+              </div>`;
       })
       .join("");
-
+      
     // Select all images inside the fetchContainer
     const imagesToLoad = buy.querySelectorAll("img");
 
@@ -52,3 +54,6 @@ async function fetchData() {
 }
 
 fetchData();
+
+
+

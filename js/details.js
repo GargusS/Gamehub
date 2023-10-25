@@ -10,28 +10,26 @@ const id = params.get("id");
 
 const url = "https://cms.sonnesyn.no/wp-json/wc/store/products/" + id;
 
-
 fetchDetails();
 
 async function fetchDetails() {
   try {
     const response = await fetch(url);
     const info = await response.json();
-    console.log(info.images[0].src);
     function createHtml(info) {
       gameInfo.innerHTML = `
       <div class="details" data-id="${info.id}">
       <button class="card-button"><a class="card-link" href="../html/buy.html">Back To Games</a></button>
       
       <h1>${info.name}</h1>
-      <h2>$ ${info.prices.price/100}</h2>
+      <h2>$ ${info.prices.price / 100}</h2>
       <img class="detail-img" src="${info.images[0].src}" 
       alt="A picture of ${info.name}">
       <h2 class="detail-description">${info.description}</h2>
       <button class="card-button" id="setItem">Add to Cart</button>
       </div>
       </div>`;
-      
+
       document.title = `${info.name}`;
 
       function handleButtonClick() {

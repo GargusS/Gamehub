@@ -14,7 +14,6 @@ async function fetchData() {
     let buy = document.getElementById("dataArray");
     buy.innerHTML = dataArray
     .map(({ id, name, description, images }) => {
-      console.log(id);
       return `<div class="card-container">
               <div class="card" data-id="${id}">
               <h4>${name}</h4>

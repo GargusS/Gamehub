@@ -20,8 +20,8 @@ This project represents my early foray into web development, specifically focusi
 The API integration aspect highlights the project's commitment to staying current and connected, offering users an immersive experience through real-time data and dynamic content.
 
 This project reflects my commitment to delivering an enjoyable and visually appealing trading experience, showcasing the evolution from HTML/CSS to a more interactive environment with the inclusion of JavaScript.
+
 ## API Integration
-https://cms.sonnesyn.no/wp-json/wc/store/products/
 
 As part of the project's evolution, API integration played a crucial role in enhancing its functionality. The integration involved leveraging external data sources to provide a more dynamic and enriched gaming experience.
 

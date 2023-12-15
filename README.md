@@ -23,7 +23,7 @@ This project reflects my commitment to delivering an enjoyable and visually appe
 
 ## API Integration
 
-As part of the project's evolution, API integration played a crucial role in enhancing its functionality. The integration involved leveraging external data sources to provide a more dynamic and enriched gaming experience.
+As part of the project's evolution, API integration played a crucial role in enhancing its functionality. The integration involved leveraging external data sources to provide a more dynamic and enriched developer experience.
 
 ## Stack
 

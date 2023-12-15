@@ -1,15 +1,15 @@
-const loader = document.querySelector(".loader");
+
 
 async function fetchData() {
   try {
-    const apiUrl = "https://cms.sonnesyn.no/wp-json/wc/store/products/";
+    const apiUrl = "https://cms.sonnesyn.no/wp-json/wc/store/products";
     const resp = await fetch(apiUrl);
-
     if (!resp.ok) {
       throw new Error("4-oh-4, Oops something went wrong here");
     }
     
     const dataArray = await resp.json();
+    console.log(dataArray);
     
     let buy = document.getElementById("dataArray");
     buy.innerHTML = dataArray
